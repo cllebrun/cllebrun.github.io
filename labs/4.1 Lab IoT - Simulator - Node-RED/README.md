@@ -26,7 +26,7 @@ This way, we don't require an actual hardware device to test our application.
 1. In a new browser window or on a smartphone, browse to [IoT Sensor](http://quickstart.internetofthings.ibmcloud.com/iotsensor){:target="_blank"}.
 <br />Alternatively, enter this short URL: http://ibm.biz/iotsensor
 
-    ![Sensor simulator](./images/iotsensor.png =10x)
+    <img alt "IoT sensor simul" src="./images/iotsensor.png" width="20%"/>
 
 1. Note the Device Id (displayed in the top right corner).
 
@@ -37,7 +37,7 @@ This way, we don't require an actual hardware device to test our application.
 <br />Alternatively, enter this short URL: http://ibm.biz/iotquickstart
 
     ![IOT Quickstart](./images/iot-quickstart.png)
-    
+
 1. Enter the device id. 
 
 1. Vizualise the live sensor data and play with the dynamic graph. 
