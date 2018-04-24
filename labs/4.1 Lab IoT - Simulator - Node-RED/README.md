@@ -15,7 +15,7 @@ This tutorial demonstrates how to connect a simulated device to the Watson IoT p
 
 
 # Pre-Requisites
-* A [IBM Cloud Platform](http://console.bluemix.net/){:target="_blank"} account
+* An [IBM Cloud Platform](http://console.bluemix.net/){:target="_blank"} account
 
 
 # Start the simulated device
@@ -26,7 +26,7 @@ This way, we don't require an actual hardware device to test our application.
 1. In a new browser window or on a smartphone, browse to [IoT Sensor](http://quickstart.internetofthings.ibmcloud.com/iotsensor){:target="_blank"}.
 <br />Alternatively, enter this short URL: http://ibm.biz/iotsensor
 
-    ![Sensor simulator](./images/smarphone-iotsensor.png)
+    ![Sensor simulator](./images/iotsensor.png)
 
 1. Note the Device Id (displayed in the top right corner).
 
@@ -40,14 +40,20 @@ This way, we don't require an actual hardware device to test our application.
     
 1. Enter the device id. 
 
-1. Vizualise the live sensor data. 
+1. Vizualise the live sensor data and play with the dynamic graph. 
 
 
 # Connect your device to the Watson IOT Platform
 
-You've seen your data, what next? Now you will see how to use theses sensors data in an application created with IBM Cloud Platform.
+You've seen your data, what next? Now you will see how to use theses sensors data in an application created with the IBM Cloud Platform.
 
-1. Create an app using **Internet of Things Platform Starter** from the Boilerplates category in the IBM Cloud Platform Catalog.
+1. Login to the [IBM Cloud Platform](http://console.bluemix.net/){:target="_blank"}.
+
+1. Browse the catalog under the "Boilerplates" category
+
+ ![IBM Cloud Platform Catalog](./images/catalog.png)
+
+1. Double click on the **Internet of Things Platform Starter** Boilerplate to create your own instance of this starter IoT application.
 
     ![](./images/boilerplate-iotstarter.png)
 
