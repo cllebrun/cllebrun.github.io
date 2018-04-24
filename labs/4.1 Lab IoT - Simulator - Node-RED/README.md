@@ -75,8 +75,7 @@ You've seen your data, what next? Now you will see how to use theses sensors dat
     NODE_RED_PASSWORD - the password
     NODE_RED_GUEST_ACCESS - if set to `true`, allows anyone read-only access to the editor
     ```
-
-
+1. Click on the red button "Go to your Node-RED flow editor" to access the flow editor.
 
 1. You see ready-made flows. The first one simulate a device publishing an event on your Watson IoT organization (the service has been created when you deployed the app).
 The second one that can process temperature readings from the Watson IoT platform events.
