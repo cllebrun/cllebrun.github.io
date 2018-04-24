@@ -88,7 +88,7 @@ The second one that can process temperature readings from the Watson IoT platfor
 
     ![IOT App IN node](./images/iot-appnode.png)
 
-1. In the Authentication type field, select **Quickstart** from the pull-down list. Enter the Device ID field and click OK.
+1. In the Authentication type field, select **Quickstart** from the pull-down list. Enter the Device ID field (you get it from the web simulator) and click OK.
 <br />*Make sure that the device id is entered in lowercase, and that there are no leading or trailing space characters.*
 
 1. Look for the **Deploy** button in the upper right hand corner of your Node-RED workspace. The deploy button is now red; click it to deploy your flow.
@@ -111,35 +111,38 @@ The second one that can process temperature readings from the Watson IoT platfor
 
   ![Cloudant configuration](./images/nodered-cloudantconfig.png)
 
-1. Deploy the flow. Return to the IBM Cloud Platform console, go to the Cloudant console and navigate into the records.
+1. Deploy the flow. Return to the IBM Cloud Platform console, on the app overview, click on "Connections" and on to the Cloudant service. Click on the green button to "Launch" the Cloudant web UI. Navigate into the DB records.
 
   ![Cloudant console](./images/cloudant-console.png)
 
+In your Node-RED flow editor, you can then delete the link between your IoT node and your Cloudant node if you want to stop storing data.
 
 # Connect with the Watson IoT Platform.
 
-The first flow simulate a device publishing an event. To vizualise the data in you Watson IoT platform organization you need to register the simulated device in your organization.
-1. Return to the IBM Cloud Platform console, click on the IoT service -> launch it
+The first flow simulate a device publishing an event. To visualize the data in you Watson IoT platform organization you need to register the simulated device in your organization.
+1. Return to the IBM Cloud Platform console, from the "Connections" tab in your application dashboard, click on the IoT service -> launch it.
 
 
 From the Internet of Things service dashboard, access your IoT organisation and add your device to it. 
 
 1. Select the Devices tab on the left.
-2. Select the "Device Types" tab.
-<img src="./images/device-type.png" width="50%"/> 
+1. Select the "Device Types" tab.
 
-2. Add Device Type (up and right).
-3. Give it a name: "thermostat". Click "Next"
-4. Leave the other options by default and click "Done".
-5. Now you are going to register a device. Click "Register Devices"
+  ![device types](./images/device-type.png)
+
+1. Add Device Type (up and right).
+1. Give it a name: "thermostat". Click "Next"
+1. Leave the other options by default and click "Done".
+
+1. Now you are going to register a device. Click "Register Devices"
 <img src="./images/register-device.png" width="40%"/> 
 
-6. Enter a device ID: "LivingRoomThermo1". Click Next, Next
-7. Chose an identification token (8 characters minimum)
-8. Click "Done"
+1. Enter a device ID: "LivingRoomThermo1". Click Next, Next
+1. At the security step, chose an identification token (8 characters minimum)
+1. Click "Done"
         
 
-1. Go back to Node-RED, open and modify the inject node to publish events continuously (repeat -> onterval -> every 3 seconds): 
+1. Go to Node-RED, open and modify the inject node to publish events continuously (repeat -> onterval -> every 3 seconds): 
 
 <img src="./images/repeat-inject.png" width="40%"/> 
 
