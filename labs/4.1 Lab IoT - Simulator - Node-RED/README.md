@@ -2,7 +2,7 @@
 
 # Introduction
 
-This tutorial demonstrates how to connect a simulated device to the Watson IoT platform, visualize its live data, store its data into a database and leverage [Node-RED](http://www.nodered.org) tool for wiring together hardware devices, APIs and online services.
+This tutorial demonstrates how to connect a simulated device to the Watson IoT platform, visualize its live data, store its data into a database and leverage [Node-RED](http://www.nodered.org){:target="_blank"} tool for wiring together hardware devices, APIs and online services.
 
 
 
@@ -23,7 +23,7 @@ This tutorial demonstrates how to connect a simulated device to the Watson IoT p
 We will use a simulator of a temperature sensor. This sensor also simulates Humidity and Object Temperature.<br />
 This way, we don't require an actual hardware device to test our application.
 
-1. In a new browser window or on a smartphone, browse to [IoT Sensor](http://quickstart.internetofthings.ibmcloud.com/iotsensor).
+1. In a new browser window or on a smartphone, browse to [IoT Sensor](http://quickstart.internetofthings.ibmcloud.com/iotsensor){:target="_blank"}.
 <br />Alternatively, enter this short URL: http://ibm.biz/iotsensor
 
     ![Sensor simulator](./images/smarphone-iotsensor.png)
@@ -33,7 +33,7 @@ This way, we don't require an actual hardware device to test our application.
 
 # View the live sensor data
 
-1. In a new browser window, browse to [Watson IOT Platform quickstart](https://quickstart.internetofthings.ibmcloud.com).
+1. In a new browser window, browse to [Watson IOT Platform quickstart](https://quickstart.internetofthings.ibmcloud.com){:target="_blank"}.
 <br />Alternatively, enter this short URL: http://ibm.biz/iotquickstart
 
     ![IOT Quickstart](./images/iot-quickstart.png)
@@ -153,5 +153,5 @@ The warning messages generated in Node-RED uses English by default. You may want
 
 For additional resources pay close attention to the following:
 
-- [Real Time Data Analysis Using IoT Platform Analytics](https://developer.ibm.com/recipes/tutorials/real-time-data-analysis-using-ibm-watson-iot-platform-analytics)
+- [Real Time Data Analysis Using IoT Platform Analytics](https://developer.ibm.com/recipes/tutorials/real-time-data-analysis-using-ibm-watson-iot-platform-analytics){:target="_blank"}
 
