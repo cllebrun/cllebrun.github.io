@@ -26,7 +26,7 @@ This way, we don't require an actual hardware device to test our application.
 1. In a new browser window or on a smartphone, browse to [IoT Sensor](http://quickstart.internetofthings.ibmcloud.com/iotsensor){:target="_blank"}.
 <br />Alternatively, enter this short URL: http://ibm.biz/iotsensor
 
-    <img alt "IoT sensor simul" src="./images/iotsensor.png" width="20%"/>
+<img alt= "IoT sensor simulator" src="./images/iotsensor.png" width="20%"/>
 
 1. Note the Device Id (displayed in the top right corner).
 
