@@ -53,21 +53,32 @@ You've seen your data, what next? Now you will see how to use theses sensors dat
 
  ![IBM Cloud Platform Catalog](./images/catalog.png)
 
-1. Double click on the **Internet of Things Platform Starter** Boilerplate to create your own instance of this starter IoT application.
+1. Double click on the **Internet of Things Platform Starter** Boilerplate to create your own instance of this IoT starter application.
 
     ![](./images/boilerplate-iotstarter.png)
 
-1. Provide the application name, modify the host name, if required, and click **Create**.
+1. Provide the application name, leave the same namefor the host, and click **Create**.
 <br /> *Note: Wait for a few minutes for your app to start running.*
 
-1. When your app is running, select the app URL or type it into the browser to open the **Node-RED flow editor**
+1. When your app is running (green status), select the app URL or type it into the browser to open the **Node-RED flow editor**
 
     ```
     https://<appname>.mybluemix.net
     ```
+1. You have the possibility to secure your Node-RED environment. If you decide not to do it, your Node-RED app (code editor) will be public and accessible by anyone who have the URL. It's recommanded to set a username and password.
 
-1. You can configure a username/pwd to secure your app which will be your code editor. 
-You see ready-made flows. The first one simulate a device publishing an event on your Watson IoT organization (the service has been created when you deployed the app).
+    ![Secure Node-RED](./images/secure.png)
+
+    Note that the settings will be persisted in the CloudantDB bound to this application. You can override them at any time by setting the following environment variables via the Bluemix console:
+    ```
+    NODE_RED_USERNAME - the username
+    NODE_RED_PASSWORD - the password
+    NODE_RED_GUEST_ACCESS - if set to `true`, allows anyone read-only access to the editor
+    ```
+
+
+
+1. You see ready-made flows. The first one simulate a device publishing an event on your Watson IoT organization (the service has been created when you deployed the app).
 The second one that can process temperature readings from the Watson IoT platform events.
 
     ![](./images/nodered-defaultflow.png)
