@@ -52,6 +52,7 @@ You've seen your data, what next? Now you will see how to use theses sensors dat
 1. Browse the catalog under the "Boilerplates" category
 
  ![IBM Cloud Platform Catalog](./images/catalog.png)
+ 
 
 1. Double click on the **Internet of Things Platform Starter** Boilerplate to create your own instance of this IoT starter application.
 
