@@ -113,7 +113,7 @@ The second one that can process temperature readings from the Watson IoT platfor
 
 1. Deploy the flow. Return to the IBM Cloud Platform console, on the app overview, click on "Connections" and on to the Cloudant service. Click on the green button to "Launch" the Cloudant web UI. Navigate into the DB records.
 
-  ![Cloudant console](./images/cloudant-console.png)
+    ![Cloudant console](./images/cloudant-console.png)
 
 In your Node-RED flow editor, you can then delete the link between your IoT node and your Cloudant node if you want to stop storing data.
 
@@ -127,7 +127,7 @@ The first flow simulate a device publishing an event. To visualize the data in y
 
 1. Select the "Device Types" tab.
 
-  ![device types](./images/device-type.png)
+    ![device types](./images/device-type.png)
 
 1. Add Device Type (up and right).
 
@@ -137,7 +137,7 @@ The first flow simulate a device publishing an event. To visualize the data in y
 
 1. Now you are going to register a device. Click "Register Devices"
 
-<img src="./images/register-device.png" width="40%"/> 
+    <img src="./images/register-device.png" width="40%"/> 
 
 1. Enter a device ID: "LivingRoomThermo1". Click Next, Next
 
@@ -147,7 +147,7 @@ The first flow simulate a device publishing an event. To visualize the data in y
 
 1. Go to Node-RED, open and modify the inject node to publish events continuously (repeat -> onterval -> every 3 seconds): 
 
-<img src="./images/repeat-inject.png" width="40%"/> 
+    <img src="./images/repeat-inject.png" width="40%"/> 
 
 1. You can see events in the Watson IoT dashboard
 
