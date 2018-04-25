@@ -158,13 +158,19 @@ The first flow simulate a device publishing an event. To visualize the data in y
 
 The warning messages generated in Node-RED uses English by default. You may want to translate those messages into your oww language.
 
-1. In the IBM Cloud Platform console, create a new service **Language Translater** (from the catalog) and connect it to your app to your app (from the Connection tab in your app dashboard).
+1. In the IBM Cloud Platform console, create a new service **Language Translator** (from the catalog) 
 
-1. In Node-RED flow editor, add a new **Language Translation** node to the flow.
+    ![Watson Language Translator catalog](./images/translator-catalog.png)
+
+1.  Connect it to your app to your app (from the Connection tab in your app dashboard). Restage your app.
+
+    ![Watson Language Translator connect](./images/translator.png)
+
+1. Wait for your app to start again. In Node-RED flow editor, add a new **Language Translator** node to the flow.
 
 1. Modify the flow accordingly to translate those messages.
 
-    ![Watson Language Translation](./images/nodered-translationflow.png)
+    ![Watson Language Translator](./images/nodered-translationflow.png)
 
 1. Deploy the updated flow. 
 
