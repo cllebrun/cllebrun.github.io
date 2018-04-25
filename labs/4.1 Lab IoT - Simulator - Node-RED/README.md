@@ -177,7 +177,7 @@ The warning messages generated in Node-RED uses English by default. You may want
 1. Observe the translated output based on the selected language.
 
 
-# Resources
+# Data Analysis with the Watson IoT Platform
 
 For additional resources pay close attention to the following:
 
