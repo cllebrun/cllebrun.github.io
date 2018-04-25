@@ -36,14 +36,14 @@ This way, we don't require an actual hardware device to test our application.
 1. In a new browser window, browse to [Watson IOT Platform quickstart](https://quickstart.internetofthings.ibmcloud.com){:target="_blank"}.
 <br />Alternatively, enter this short URL: http://ibm.biz/iotquickstart
 
-    ![IOT Quickstart](./images/iot-quickstart.png)
+    ![IoT Quickstart](./images/iot-quickstart.png)
 
 1. Enter the device id. 
 
 1. Vizualise the live sensor data and play with the dynamic graph. 
 
 
-# Connect your device to the Watson IOT Platform
+# Connect your device to the Watson IoT Platform
 
 You've seen your data, what next? Now you will see how to use theses sensors data in an application created with the IBM Cloud Platform.
 
@@ -86,7 +86,7 @@ The second one that can process temperature readings from the Watson IoT platfor
 
 1. In the second flow ("Temperature Monitor"), double-click the **IBM IoT App In** node to open the configuration dialog.
 
-    ![IOT App IN node](./images/iot-appnode.png)
+    ![IoT App IN node](./images/iot-appnode.png)
 
 1. In the Authentication type field, select **Quickstart** from the pull-down list. Enter the Device ID field (you get it from the web simulator) and click OK.
 <br />*Make sure that the device id is entered in lowercase, and that there are no leading or trailing space characters.*
