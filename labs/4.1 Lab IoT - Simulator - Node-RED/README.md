@@ -55,7 +55,7 @@ You've seen your data, what next? Now you will see how to use theses sensors dat
 
 1. Double click on the **Internet of Things Platform Starter** Boilerplate to create your own <br /> instance of this IoT starter application.
 
-    ![](./images/boilerplate-iotstarter.png)
+    ![iotstarter](./images/boilerplate-iotstarter.png)
 
 1. Provide the application name, leave the same namefor the host, and click **Create**.
 <br /> *Note: Wait for a few minutes for your app to start running.*
@@ -109,7 +109,7 @@ The second one that can process temperature readings from the Watson IoT platfor
 1. In the Service type field, select the name of Cloudant service bound to Node.js runtime from the pull-down list.
 <br />Enter a dabatase name in lowercase. Keep the default operation insert and finally give a name to the node.
 
-  ![Cloudant configuration](./images/nodered-cloudantconfig.png)
+    ![Cloudant config](./images/nodered-cloudantconfig.png)
 
 1. Deploy the flow. Return to the IBM Cloud Platform console, on the app overview, click on "Connections" and on to the Cloudant service. Click on the green button to "Launch" the Cloudant web UI. Navigate into the DB records.
 
