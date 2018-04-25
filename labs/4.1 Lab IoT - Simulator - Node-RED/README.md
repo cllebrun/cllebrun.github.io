@@ -120,27 +120,30 @@ In your Node-RED flow editor, you can then delete the link between your IoT node
 # Connect with the Watson IoT Platform.
 
 The first flow simulate a device publishing an event. To visualize the data in you Watson IoT platform organization you need to register the simulated device in your organization.
+
 1. Return to the IBM Cloud Platform console, from the "Connections" tab in your application dashboard, click on the IoT service -> launch it.
 
+1. From the Internet of Things service dashboard, access your IoT organisation and add your device to it: Select the Devices tab on the left.
 
-From the Internet of Things service dashboard, access your IoT organisation and add your device to it. 
-
-1. Select the Devices tab on the left.
 1. Select the "Device Types" tab.
 
   ![device types](./images/device-type.png)
 
 1. Add Device Type (up and right).
+
 1. Give it a name: "thermostat". Click "Next"
+
 1. Leave the other options by default and click "Done".
 
 1. Now you are going to register a device. Click "Register Devices"
+
 <img src="./images/register-device.png" width="40%"/> 
 
 1. Enter a device ID: "LivingRoomThermo1". Click Next, Next
+
 1. At the security step, chose an identification token (8 characters minimum)
+
 1. Click "Done"
-        
 
 1. Go to Node-RED, open and modify the inject node to publish events continuously (repeat -> onterval -> every 3 seconds): 
 
