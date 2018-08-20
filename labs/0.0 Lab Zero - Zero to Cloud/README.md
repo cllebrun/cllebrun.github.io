@@ -37,29 +37,29 @@ You can choose from bare metal servers to serverless compute to build the best s
 
 1. Connect to your [IBM Cloud account](https://console.bluemix.net) 
 
-1. On the top left, click on the hamburger menu: <img src="./images/burger_menu.png"/>
+2. On the top left, click on the hamburger menu: <img src="./images/burger_menu.png"/>
 
-1. You can see different sections are available: Cloud Foundry, Containers, Infrasctructure and VMware. In this lab, we will focus on the Cloud Foundry functionalities. 
+3. You can see different sections are available: Cloud Foundry, Containers, Infrasctructure and VMware. In this lab, we will focus on the Cloud Foundry functionalities. 
 
-1. Click on "Cloud Foundry" to learn more.
-With IBM Cloud Foundry, you don't need to manage servers or clusters. You can focus on your code and your data and directly deploy and run your application to IBM cloud. You can either use Public applications or Entreprise Environment (experimental)
+4. Click on "Cloud Foundry" to learn more.
+With IBM Cloud Foundry, you don't need to manage servers or clusters. You can focus on your code and your data and directly deploy your application to IBM cloud. You can either use Public applications or Entreprise Environment (experimental)
 
 Many application runtimes are managed on IBM Cloud: .Java liberty, .JS, .xsp, .swift, .py, .rb, .net, .php, .go, tomcat
 
-1. In order to organize your workspace on IBM Cloud we are going to create a specific space for these hands-on. Click on "Manage your public organizations and spaces" under the "Public Applications" section:
+5. In order to organize your workspace on IBM Cloud we are going to create a specific space for these hands-on. Click on "Manage your public organizations and spaces" under the "Public Applications" section:
 
 <img src="./images/public_applications.png"/>
 
 
-1. You may have already have a Cloud Foundry organization created. If not, create one (click "add an organization"). Then, select your organization and create a new space:
+6. You may have already have a Cloud Foundry organization created. If not, create one (click "add an organization"). Then, select your organization and "Add a space":
 
 <img src="./images/create_space.png"/>
   
-1. Chose the "US South region" and give your space a name like "handsOn" for example. Click Save.
+7. Chose the "US South" region and give your space a name like "handsOn" for example. Click Save.
 
 <img src="./images/create_space2.png"/>
 
-You now have a dedicated space for your Cloud Foundry applications you will run and deploy today.
+You now have a dedicated space where you will run and deploy your Cloud Foundry applications today.
 
 # Step 2 - Create your application using a starter kit
 
