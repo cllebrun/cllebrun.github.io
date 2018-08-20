@@ -8,8 +8,7 @@ This lab is an introduction to IBM Cloud and its posibilities. No need any devel
 
 # Objective
 
-+ Learn more about PaaS
-+ Discover the IBM Cloud services Catalog
++ Discover the IBM Cloud services catalog
 + Use one of the starter kits available to create your web application on IBM Cloud
 + Manage your IBM Cloud Dashboard
 
@@ -23,22 +22,21 @@ This lab is an introduction to IBM Cloud and its posibilities. No need any devel
 
 # Steps
 
-1. PaaS Overview
-2. Catalog Overview
-3. Create your application using a starter kit
-4. Navigate on your dashboard
+1. Compute Options and Catalog Overview
+2. Create your application using a starter kit
+3. Navigate on your dashboard
 
 
 
-# Step 1 - PaaS Overview
+# Step 1 - Compute Options and Catalog Overview
 
-1. IBM's innovative cloud computing platform combines platform as a service (PaaS) with infrastructure as a service (IaaS) and includes a catalog of cloud services that can be integrated with PaaS and IaaS to build business applications.
+IBM's innovative cloud computing platform combines platform as a service (PaaS) with infrastructure as a service (IaaS) and includes a catalog of cloud services that can be integrated with PaaS and IaaS to build business applications.
 
-1. You can choose from bare metal servers to serverless compute to build the best solution for your workload
+You can choose from bare metal servers to serverless compute to build the best solution for your workload
 
-1. 
+1. Connect to your IBM account at https://console.bluemix.net
 
-1. 
+1. On the top left, click on the hamburger menu: <img src="./images/burger-menu.png" width="20%"/>
 
 1. 
 
@@ -48,21 +46,9 @@ This lab is an introduction to IBM Cloud and its posibilities. No need any devel
 
 1. 
   
-# Step 2 - Catalog Overview
-
-1. 
-
-1. 
-
- 
-
-1. 
-
- 
-1. 
 
 
-# Step 3 - Create your application using a starter kit
+# Step 2 - Create your application using a starter kit
 
 In IBM Cloud, you can build enterprise-level mobile and web applications and take advantage of cloud extensions that are hosted by IBM Cloud. You can use the IBM Cloud console and command line tools to build, run, and deploy your apps. Get started in two ways: create an app with a starter kit that manages the process for you, or if you know what you want, build your app with the resources you need.
 
@@ -77,7 +63,7 @@ You can use a starter kit to quickly get your app started and prepare it for fut
 
 1. 
 
-# Step 4 - Navigate on your dashboard
+# Step 3 - Navigate on your dashboard
 
 
 
