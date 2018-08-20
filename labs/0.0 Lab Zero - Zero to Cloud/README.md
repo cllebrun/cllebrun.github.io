@@ -34,9 +34,9 @@ IBM's innovative cloud computing platform combines platform as a service (PaaS) 
 
 You can choose from bare metal servers to serverless compute to build the best solution for your workload
 
-1. Connect to your IBM account at https://console.bluemix.net
+1. Connect to your [IBM Cloud account](https://console.bluemix.net) 
 
-1. On the top left, click on the hamburger menu: <img src="./images/burger-menu.png" width="20%"/>
+1. On the top left, click on the hamburger menu: <img src="./images/burger_menu.png" width="20%"/>
 
 1. 
 
