@@ -61,6 +61,11 @@ Many application runtimes are managed on IBM Cloud: .Java liberty, .JS, .xsp, .s
 
 You now have a dedicated space where you will run and deploy your Cloud Foundry applications today.
 
+8. You now are going to browse the catalog to discover services and APIs available on IBM Cloud. You will use some of them in the following hands-On labs.
+Click on the "Catalog" tab on the top menu: <img src="./images/catalog-menu.png"/>
+
+On the left side, there is a shorcut menu to access the different category of services and APIs. For example if you scroll to the "AI" category, you can instanciate the different IBM APIs and tools
+
 # Step 2 - Create your application using a starter kit
 
 In IBM Cloud, you can build enterprise-level mobile and web applications and take advantage of cloud extensions that are hosted by IBM Cloud. You can use the IBM Cloud console and command line tools to build, run, and deploy your apps. Get started in two ways: create an app with a starter kit that manages the process for you, or if you know what you want, build your app with the resources you need.
