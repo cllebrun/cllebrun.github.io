@@ -36,7 +36,7 @@ You can choose from bare metal servers to serverless compute to build the best s
 
 1. Connect to your [IBM Cloud account](https://console.bluemix.net) 
 
-1. On the top left, click on the hamburger menu: <img src="./images/burger_menu.png" width="20%"/>
+1. On the top left, click on the hamburger menu: <img src="./images/burger_menu.png"/>
 
 1. 
 
