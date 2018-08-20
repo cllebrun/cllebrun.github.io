@@ -9,10 +9,10 @@
 
 This lab is an introduction to IBM Cloud and its posibilities. No need any developer skills to complete the lab. You just need an IBM Cloud account in order to create your web application.
 
-+ Discover the different languages available
++ About Cloud Foundry
 + Discover the IBM Cloud services Catalog
-+ Use one of the starter kits available to create your first application with IBM Cloud
-+ Test your live application !
++ Use one of the starter kits available to create your web application on IBM Cloud
++ Manage your IBM Cloud Dashboard
 
 
 
@@ -24,13 +24,14 @@ This lab is an introduction to IBM Cloud and its posibilities. No need any devel
 
 # Steps
 
-1. Runtimes overview
-2. Catalog overview
-3. Create your first application using a starter kit
+1. Cloud Foundry Overview
+2. Catalog Overview
+3. Create your application using a starter kit
+4. Navigate on your dashboard
 
 
 
-# Step 1 - 
+# Step 1 - Cloud Foundry Overview
 
 1. 
 
@@ -48,7 +49,7 @@ This lab is an introduction to IBM Cloud and its posibilities. No need any devel
 
 1. 
   
-# Step 2 - 
+# Step 2 - Catalog Overview
 
 1. 
 
@@ -62,7 +63,7 @@ This lab is an introduction to IBM Cloud and its posibilities. No need any devel
 1. 
 
 
-# Step 3 - 
+# Step 3 - Create your application using a starter kit
 
 1. 
 
@@ -75,7 +76,7 @@ This lab is an introduction to IBM Cloud and its posibilities. No need any devel
 
 1. 
 
-# Step 4 - 
+# Step 4 - Navigate on your dashboard
 
 
 
@@ -88,29 +89,6 @@ This lab is an introduction to IBM Cloud and its posibilities. No need any devel
 1. 
 1.  
 
-# Step 5 - 
-
-
-
-
-# Step 6 - 
-
-1. 
-  
-
-1. 
-
-1. 
-
-1. 
-
-1. 
-1. 
-  
-1. 
-1. 
-
-1. 
 
 # Resources
 
