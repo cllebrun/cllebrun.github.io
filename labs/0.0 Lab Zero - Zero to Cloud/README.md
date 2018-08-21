@@ -43,7 +43,6 @@ You can choose from bare metal servers to serverless compute to build the best s
 
 4. Click on "Cloud Foundry" to learn more.
 With IBM Cloud Foundry, you don't need to manage servers or clusters. You can focus on your code and your data and directly deploy your application to IBM cloud. You can either use Public applications or Entreprise Environment (experimental)
-
 Many application runtimes are managed on IBM Cloud: .Java liberty, .JS, .xsp, .swift, .py, .rb, .net, .php, .go, tomcat
 
 5. In order to organize your workspace on IBM Cloud we are going to create a specific space for these hands-on. Click on "Manage your public organizations and spaces" under the "Public Applications" section:
