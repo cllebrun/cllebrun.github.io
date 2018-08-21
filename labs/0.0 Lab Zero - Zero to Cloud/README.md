@@ -42,17 +42,16 @@ You can choose from bare metal servers to serverless compute to build the best s
 3. You can see different sections are available: Cloud Foundry, Containers, Infrasctructure and VMware. In this lab, we will focus on the Cloud Foundry functionalities. 
 
 4. Click on "Cloud Foundry" to learn more.
-With IBM Cloud Foundry, you don't need to manage servers or clusters. You can focus on your code and your data and directly deploy your application to IBM cloud. You can either use Public applications or Entreprise Environment (experimental)
+With IBM Cloud Foundry, you don't need to manage servers or clusters. You can focus on your code and your data and directly deploy your application to IBM cloud. You can either use Public applications or Entreprise Environment (experimental).
 Many application runtimes are managed on IBM Cloud: .Java liberty, .JS, .xsp, .swift, .py, .rb, .net, .php, .go, tomcat
 
 5. In order to organize your workspace on IBM Cloud we are going to create a specific space for these hands-on. Click on "Manage your public organizations and spaces" under the "Public Applications" section:
 
-<img src="./images/public_applications.png"/>
-
+	<img src="./images/public_applications.png"/>
 
 6. You may have already have a Cloud Foundry organization created. If not, create one (click "add an organization"). Then, select your organization and "Add a space":
 
-<img src="./images/create_space.png"/>
+	<img src="./images/create_space.png"/>
   
 7. Chose the "US South" region and give your space a name like "handsOn" for example. Click Save.
 
