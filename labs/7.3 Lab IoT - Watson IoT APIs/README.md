@@ -1,5 +1,5 @@
 
-# Introduction
+# 7.3 Lab IoT - Watson IoT APIs - Introduction
 <img src="./images/iotp_icon_64.png" width="20%"/> 
 
 This tutorial demonstrates how to subscribe to device events from an app

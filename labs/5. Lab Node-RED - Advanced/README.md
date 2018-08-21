@@ -1,5 +1,6 @@
 
-# Introduction
+
+# 5. Lab Node-RED - Advanced - Introduction
 
 This tutorial demonstrates how to use the Node-RED [Node-RED](http://www.nodered.org) tool for wiring together APIs, data and code.
 

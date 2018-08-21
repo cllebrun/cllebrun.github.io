@@ -1,5 +1,5 @@
 
-# Introduction
+# 7.2 Lab IoT - with ARM 2 - Introduction
 <img src="./images/arm1.jpeg" width="20%"/> 
 
 This tutorial demonstrates how to register your device into a private IBM Watson IoT Platform organisation and start sending commands to it.

@@ -1,5 +1,5 @@
 
-# Introduction
+# 6.1 Lab IoT - Setup your RaspberryPi - add Node-RED - Introduction
 
 This tutorial demonstrates how to setup your Raspberry Pi and install the Node-RED [Node-RED](http://www.nodered.org) tool for wiring together sensors,  APIs, data and code.
 

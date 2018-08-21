@@ -1,6 +1,6 @@
 
 
-# Introduction
+# 7.1 Lab IoT - with ARM 1 - Introduction
 <img src="./images/arm1.jpeg" width="20%"/> 
 This tutorial demonstrates how to connect your ARM device to the Watson IoT Platform and prepare your development environement ont the IBM Cloud Platfrom with Node-RED and the IoT service.
 

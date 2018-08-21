@@ -1,5 +1,5 @@
 
-# Introduction
+# 2.2 Lab Node.js - Toolchain 2 - Introduction
 
 In this lab, you’ll gain a high level understanding of the IBM Cloud Platform Toolchains
 

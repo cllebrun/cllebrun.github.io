@@ -1,6 +1,6 @@
 ![](./images/iotp_icon_64.png)
 
-# Introduction
+# 4.2 Lab IoT - Dashboard Nodes - Introduction
 
 With Node-RED you have access to a large set of nodes librairies. You will learn here how to use the Node-RED dashboard nodes.
 
