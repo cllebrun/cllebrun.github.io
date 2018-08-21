@@ -78,30 +78,57 @@ In IBM Cloud, you can build enterprise-level mobile and web applications and tak
 
 You can use a starter kit to quickly get your app started and prepare it for future development. Choose a starter kit and programming language, create an app, and then set up a DevOps toolchain to automatically deploy your app. You can also download the code for immediate inspection.
 
-1. 
+1. From the catalog section, broswe the "Starter Kits" category:
+	
+	<img src="./images/starter-kits.png"/>
 
-1. 
+1. Select the "Node.js Cloudant DB Web Starter". This starter Kit is a Node.js application using a noSQL Cloudant Database. When creating this starter Kit, you are creating a Cloudant service instance and a Node.js runtime.
 
- 
-1. 
+1. Give your app a unique name and unique host (e.g. nodeapp-[your-initials])
 
-1. 
+1. Make sure to choose the Region/Organization/Space you've created for these hands-On labs in Step 1.
+
+1. SDK for Node.js plan: "Default" and Cloudant plan: "Lite"
+
+1. Click Create and wait for your application to start.
+
 
 # Step 3 - Navigate on your dashboard
 
+1. When your app is started (green dot), click on the app name to access the app overview:
 
+	<img src="./images/app-overview.png"/>
 
+	On the overview screen you can manage your application, scale it, manage the memory allocated and the instances number.
+	You can also visualize the associated services, here you see the Cloudant DB instance under "Connections". 
+	You can see the current and estimated cost of your app.
 
-1. 
+1. Click on the "Visit App URL" link (next to your app name on the overview) to launch your app in a different tab.
 
- 
+	<img src="./images/favorites-organizer.png"/>
+
+	This web app is a file organizer. You can upload a document or a picture and il will be loaded in the Cloudant database and shown on the web app interface.
   
-1. 
-1. 
-1.  
+1. Click Browse and chose a picture on your laptop. Give it a name and a description.
+1. Click Upload.
+1.  Your picture appears as a preview on the web interface. 
+	<img src="./images/upload.png"/>
+	Let's check if it's been loaded in the database
 
+1.  Go back to your IBM Cloud tab in your browser. 
+1.  From the app overview, click on the Cloudant database under "Connections".
+2.  Next to the name or your Cloudant instance, click on the alias name:
+	<img src="./images/alias.png"/>
+
+1.	Click on "Launch Cloudant Dashboard"
+1.	You can look at your database content:
+	
+	<img src="./images/Cloudant.png"/>
+	
 
 # Resources
 
 For additional resources pay close attention to the following:
+- [Cloudant documentation](https://console.ng.bluemix.net/docs/services/Cloudant/index.html#getting-started-with-cloudant)
+- [Creating a basic web app with a starter kit](https://console.ng.bluemix.net/docs/services/Cloudant/index.html#getting-started-with-cloudant)
 
