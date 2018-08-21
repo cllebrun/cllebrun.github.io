@@ -98,12 +98,10 @@ To deploy to IBM Cloud, it can be helpful to set up a manifest.yml file. The man
   ibmcloud api  https://api.ng.bluemix.net
   ```
 
-  then log in:
-
   ```
   ibmcloud login
   ```
-1.  If it ask, provide your account.
+1.  If it is asked, provide your account.
 1.  Target a Cloud Foundry org and space:
   
   ```
