@@ -6,9 +6,9 @@ Getting Started with the IBM Cloud Platform !
 
 + [0.0 Lab Zero - Zero to Cloud](./labs/0.0%20Lab%20Zero%20-%20Zero%20to%20Cloud)
 
-+ [1.1 Lab Node.js - add Watson TTS in a Node.js web app](./labs/1.1%20Lab%20Node.js%20-%20add%20Watson%20TTS%20in%20a%20Node.js%20web%20app)
++ [1.1 Lab Node.js - getting started](./labs/1.1%20Lab%20Node.js%20-%20getting%20started)
 
-+ [1.2 Lab Node.js - Cloudant](./labs/1.2%20Lab%20Node.js%20-%20Cloudant)
++ [1.2 Lab Node.js - add a Watson service](./labs/1.2%20Lab%20Node.js%20-%20add%20a%20Watson%20service)
 
 + [2.1 Lab Node.js - Toolchain](./labs/2.1%20Lab%20Node.js%20-%20Toolchain)
 
