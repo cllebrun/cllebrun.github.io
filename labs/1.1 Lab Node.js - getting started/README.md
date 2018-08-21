@@ -1,5 +1,5 @@
 
-# Introduction
+# 1.1 Lab Node.js - getting started - Introduction
 
 By following this tutorial, you'll set up a development environment, deploy an app locally and on IBM Cloud, and integrate an IBM Cloud database service in your app.
 
