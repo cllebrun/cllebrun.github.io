@@ -55,9 +55,9 @@ Many application runtimes are managed on IBM Cloud: .Java liberty, .JS, .xsp, .s
   
 7. Chose the "US South" region and give your space a name like "handsOn" for example. Click Save.
 
-<img src="./images/create_space2.png"/>
+	<img src="./images/create_space2.png"/>
 
-You now have a dedicated space where you will run and deploy your Cloud Foundry applications today.
+	You now have a dedicated space where you will run and deploy your Cloud Foundry applications today.
 
 8. You now are going to browse the catalog to discover services and APIs available on IBM Cloud. You will use some of them in the following hands-On labs.
 Click on the "Catalog" tab on the top menu: <img src="./images/catalog-menu.png"/>
