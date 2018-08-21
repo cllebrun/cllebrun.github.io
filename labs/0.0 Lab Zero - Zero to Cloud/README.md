@@ -60,9 +60,17 @@ Many application runtimes are managed on IBM Cloud: .Java liberty, .JS, .xsp, .s
 	You now have a dedicated space where you will run and deploy your Cloud Foundry applications today.
 
 8. You now are going to browse the catalog to discover services and APIs available on IBM Cloud. You will use some of them in the following hands-On labs.
-Click on the "Catalog" tab on the top menu: <img src="./images/catalog-menu.png"/>
+Click on the "Catalog" tab on the top menu: 
+	
+	<img src="./images/catalog-menu.png"/>
 
-On the left side, there is a shorcut menu to access the different category of services and APIs. For example if you scroll to the "AI" category, you can instanciate the different IBM APIs and tools
+	On the left side, there is a shorcut menu to access the different category of services and APIs. For example if you scroll to the "AI" category, you can instanciate the different IBM Watson APIs and tools to add cognitive features to your applications:
+
+	<img src="./images/watson-catalog.png"/>
+
+	If you look at the "Databases" section, you find out different type of database are available on IBM Cloud: SQL or noSQL, IBM products or Third party products ...
+
+	<img src="./images/databases-catalog.png"/>
 
 # Step 2 - Create your application using a starter kit
 
