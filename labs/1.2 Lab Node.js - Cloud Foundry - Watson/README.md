@@ -1,12 +1,6 @@
-# 1.2 Lab Node.js - add a Watson service - Introduction
+# 1.2 Lab Node.js - Cloud Foundry - Watson - Introduction
 
-# Getting started with Node.js and Cloudant on the IBM Cloud Platform
-By following this guide, you'll set up a development environment, deploy an app locally and on the IBM Cloud Platform, and integrate a database service in your app.
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/IBM-Bluemix/get-started-java/master/docs/GettingStarted.gif" width="300">
-</p>
-
+Getting started with Node.js and Watson services integration
 
 # Objective
 
@@ -21,14 +15,15 @@ In the following lab, you will learn:
 # Pre-Requisites
 
 + Get an [IBM Cloud Platform account](https://console.bluemix.net/registration/), or use an existing account.
-+ Install the [IBM Cloud CLI](http://clis.ng.bluemix.net/ui/home.html)
-+ Install the [Git CLI](https://git-scm.com/downloads)
++ Install the [IBM Cloud developer tools](https://github.com/IBM-Cloud/ibm-cloud-developer-tools) (this includes IBM Cloud CLI)
 + Install [Node.js](https://nodejs.org) to test locally
++ You completed the lab 1.1
+
 
 
 # Steps
 
-1. [Clone a sample application](#step-1---clone-a-sample-application)
+1. [Create a Watson Service](#step-1---clone-a-sample-application)
 2. [Run the app locally](#step-2---run-the-app-locally)
 3. [Prepare the app for deployment](#step-3---prepare-the-app-for-deployment)
 4. [Deploy the app](#step-4---deploy-the-app)

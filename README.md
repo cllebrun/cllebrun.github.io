@@ -6,17 +6,15 @@ Getting Started with the IBM Cloud Platform !
 
 + [0.0 Lab Zero - Zero to Cloud](./labs/0.0%20Lab%20Zero%20-%20Zero%20to%20Cloud)
 
-+ [1.1 Lab Node.js - getting started](./labs/1.1%20Lab%20Node.js%20-%20getting%20started)
++ [1.1 Lab Node.js - Cloud Foundry - Cloudant DB](./labs/1.1%20Lab%20Node.js%20-%20Cloud%20Foundry%20-%20Cloudant%20DB)
 
-+ [1.2 Lab Node.js - add a Watson service](./labs/1.2%20Lab%20Node.js%20-%20add%20a%20Watson%20service)
++ [1.2 Lab Node.js - Cloud Foundry - Watson](./labs/1.2%20Lab%20Node.js%20-%20Cloud%20Foundry%20-%20Watson)
 
-+ [2.1 Lab Node.js - Toolchain](./labs/2.1%20Lab%20Node.js%20-%20Toolchain)
++ [2.1 Lab Node.js - Developer tool: Toolchain](./labs/2.1%20Lab%20Node.js%20-%20Developer%20tool:%20Toolchain)
 
-+ [2.2 Lab Node.js - Toolchain 2](./labs/2.2%20Lab%20Node.js%20-%20Toolchain%202)
++ [3.1 Lab Watson - Watson Conversation](./labs/3.1%20Lab%20Watson%20-%20Watson%20Conversation)
 
-+ [3.1 Lab Watson - Create natural Dialog with Watson Conversation](./labs/3.1%20Lab%20Watson%20-%20Create%20natural%20Dialog%20with%20Watson%20Conversation)
-
-+ [3.2 Lab OK Watson - node-red](./labs/3.2%20Lab%20OK%20Watson%20-%20node-red)
++ [3.2 Lab Watson - Node-Red - OK Watson](./labs/3.2%20Lab%20Watson%20-%20Node-Red%20-%20OK%20Watson)
 
 + [4.1 Lab IoT - Simulator - Node-RED](./labs/4.1%20Lab%20IoT%20-%20Simulator%20-%20Node-RED)
 

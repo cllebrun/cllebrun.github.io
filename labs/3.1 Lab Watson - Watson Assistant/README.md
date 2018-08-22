@@ -1,10 +1,10 @@
 ![](./images/conversation_icon_64x64.png)
 
-# 3.1 Lab Watson - Create natural Dialog with Watson Conversation - Introduction
+# 3.1 Lab Watson - Watson Assistant - Introduction
 
-With the Watson Conversation service you can create virtual agents and bots that combine machine learning, natural language understanding, and integrated dialog tools to provide automated customer engagements.
+With the Watson Assistant service you can create virtual agents and bots that combine machine learning, natural language understanding, and integrated dialog tools to provide automated customer engagements.
 
-The following image illustrates many uses for the Conversation service.
+The following image illustrates many uses for the Assistant service.
 
   ![](./images/usesofconversation.png)
 
@@ -28,7 +28,7 @@ In the following lab, you will learn:
 
 # Steps
 
-1. [Create a Watson Conversation service](#step-1---create-a-watson-conversation-service)
+1. [Create a Watson Assistant service](#step-1---create-a-watson-assistant-service)
 2. [Create your workspace](#step-2---create-your-workspace)
 3. [Work with intents and examples](#step-3---work-with-intents-and-examples)
 4. [Work with entities](#step-4---work-with-entities)
@@ -36,11 +36,11 @@ In the following lab, you will learn:
 6. [Integrate the dialog into a web app](#step-6---integrate-the-dialog-into-a-web-app)
 
 
-# Step 1 - Create a Watson Conversation service
+# Step 1 - Create a Watson Assistant service
 
 1. On the IBM Cloud Platform account dashboard, select Catalog from the menu bar.
 
-1. Scroll down to the Services section and click the icon for the Watson Conversation service. The Add Service page opens.
+1. Scroll down to the Services section and click the icon for the Watson Assistant service. The Add Service page opens.
 
 1. Click Create. The service instance is created, and the service dashboard page opens automatically.
 
@@ -313,5 +313,5 @@ Note: If you still get the message "The app has not been configured with a WORKS
 
 For additional resources pay close attention to the following:
 
-- [Watson Conversation Documentation](http://www.ibm.com/watson/developercloud/doc/conversation/index.shtml)
+- [Watson Assistant Documentation](http://www.ibm.com/watson/developercloud/doc/conversation/index.shtml)
 
