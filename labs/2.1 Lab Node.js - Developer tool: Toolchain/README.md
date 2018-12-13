@@ -12,7 +12,7 @@ In the following lab, you will learn:
 + How to setup a toolchains on the IBM Cloud Platform
 + How to use the online editor
 + How to deploy with the toolchain
-+ How to use git with the tootlchain
++ How to use git with the toolchain
 + How to use the build and deploy
 
 
@@ -66,15 +66,11 @@ In this part, you will use the Git tool to comit and push your updates. You will
 20: You need first to import two libraries to your code. A .css file for your clock's look and fill and a .js file for the javascript logic.
 Select the "public" folder in your source code repository, click right and chose Import -> HTTP.
 Import the two libraries, using these URL:
-  
+
   ```
   https://raw.githubusercontent.com/cllebrun/Flipclock/master/flipclock.css
 
   https://raw.githubusercontent.com/cllebrun/Flipclock/master/flipclock.js
-  
+
   ```
 <img src="./images/importlib.png" width="30%"/>
-
-
-
-

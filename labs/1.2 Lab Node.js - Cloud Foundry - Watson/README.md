@@ -1,6 +1,7 @@
 # 1.2 Lab Node.js - Cloud Foundry - Watson - Introduction
 
-Getting started with Node.js and Watson services integration
+Getting started with Node.js and Watson services integration. You need to complete the lab 1.1 first.
+In the previous lab, you have cloned and deployed the app "get-started-node". You also binded a database. In this lab you will instanciate a new Watson service and use it in your web application.
 
 # Objective
 
@@ -8,7 +9,7 @@ In the following lab, you will learn:
 
 + How to deploy a new Cloud Foundry app based on Node.js runtime
 + How to run a Node.js app locally
-+ How to create a new database service  
++ How to create and use a Watson service. 
 + How to use the Cloud Foundry Command Line Interface
 
 
@@ -23,52 +24,42 @@ In the following lab, you will learn:
 
 # Steps
 
-1. [Create a Watson Service](#step-1---clone-a-sample-application)
-2. [Run the app locally](#step-2---run-the-app-locally)
-3. [Prepare the app for deployment](#step-3---prepare-the-app-for-deployment)
-4. [Deploy the app](#step-4---deploy-the-app)
-5. [Add a database](#step-5---add-a-database)
-6. [Use the database](#step-6---use-the-database)
+1. [Create a Watson Service](#step-1---create-a-watson-service)
+2. [Modify the UI code](#step-2---modify-the-ui-code)
+3. [Integrate the Watson service](#step-3---integrate-the-watson-service)
+4. [Run the app locally](#step-4---run-the-app-locally)
+5. [Deploy the app](#step-5---deploy-the-app)
 
 
-# Step 1 - Clone a sample application
 
-Now you're ready to start working with the simple Node.js *hello world* app. Clone the repository and change to the directory to where the sample app is located.
+# Step 1 - Create a Watson Service
+
+1. In your browser, log in to IBM Cloud and go to the Dashboard. Select Create Resource.
+
+1. Choose the AI section, then select "Text To Speech" and create your service (same space where you have your application "get-started-node").
+
+  <img src="./images/text-to-speech.png"/>
+
+1. Go to the Connections view and select your application, then Create connection. Connect.
+
+1. Select Restage when prompted. IBM Cloud will restart your application and provide the service credentials to your application using the VCAP_SERVICES environment variable. This environment variable is available to the application only when it is running on IBM Cloud.
+
+
+# Step 3 - Integrate the Watson service
+
+In order to use the Watson service in your Node.js app, you need to install the right package locally.
+
+1.  On your laptop, open the command line, change the directory of your app source code is located. For example:
   ```
-  git clone https://github.com/IBM-Bluemix/get-started-node
+  $ cd get-started-node
+  ```
+1.  Install the Watson node module with npm:
+
+  ```
+  $ npm install watson-developer-cloud
   ```
 
-  ```
-  cd get-started-node
-  ```
-
-# Step 2 - Run the app locally
-
-Install the dependencies listed in the [package.json](https://docs.npmjs.com/files/package.json) file to run the app locally.  
-  ```
-  npm install
-  ```
-
-Run the app.
-  ```
-  npm start  
-  ```
-
-View your app at: http://localhost:3000
-
-# Step 3 - Prepare the app for deployment
-
-To deploy to the IBM Cloud Platform, it can be helpful to set up a manifest.yml file. One is provided for you with the sample. Take a moment to look at it.
-
-The manifest.yml includes basic information about your app, such as the name, how much memory to allocate for each instance and the route. In this manifest.yml **random-route: true** generates a random route for your app to prevent your route from colliding with others.  Replace 'nodejs-helloworld' with the name of your choice for your application. You can also replace **random-route: true** with **host: myChosenHostName**, supplying a host name of your choice but it has to be unique. [Learn more...](https://console.bluemix.net/docs/manageapps/depapps.html#appmanifest)
- ```
- applications:
- - name: nodejs-helloworld
-   random-route: true
-   memory: 128M
- ```
-
-# Step 4 - Deploy the app
+# Step 4 - Run the app locally
 
 You can use the the IBM Cloud Platform CLI to deploy apps.
 
@@ -112,7 +103,7 @@ bx apps
 command to view your apps status and see the URL.
 
 
-# Step 5 - Add a database
+# Step 5 - Deploy the app
 
 Next, we'll add a NoSQL database to this application and set up the application so that it can run locally and on the IBM Cloud Platform.
 You can do it using the IBM Cloud UI or the CLI:

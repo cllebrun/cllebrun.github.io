@@ -125,7 +125,7 @@ Next, we'll add an IBM Cloudant NoSQL database to this application and set up th
 
 1. In your browser, log in to IBM Cloud and go to the Dashboard. Select Create Resource.
 
-1. Choose the Databases section, then select Cloudant and create your service (same space where you havec pushed your application).
+1. Choose the Databases section, then select Cloudant and create your service (same space where you have pushed your application).
 
   <img src="./images/cloudant-creation.png"/>
 
