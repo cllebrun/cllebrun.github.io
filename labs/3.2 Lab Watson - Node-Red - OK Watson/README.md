@@ -87,4 +87,20 @@ In the following lab, you will learn:
 
 1. Test it
 
-# Step 5 - Watson Tone Analyser
+# Step 5 - Watson Visual recognition
+
+1. You may already have an instance of Visual Recognition.
+
+1.  You just need to drag and drop the visual recognition node to your node-RED
+
+1. Import the solution on your dashboard: https://github.com/cllebrun/cllebrun.github.io/blob/master/labs/3.3%20Lab%20Watson%20-%20Visual%20Recognition/solution.json
+
+  Menu -> Import -> clipboard
+
+  <img src="./images/visu.png"/>
+
+1. Configure the Visual reco with your api key and your service ENDPOINT
+
+1. Deploy
+
+1. Launch [yourappname]/people and give an image url of a person. Check the results.
