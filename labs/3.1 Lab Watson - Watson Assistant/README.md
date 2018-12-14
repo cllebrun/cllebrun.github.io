@@ -224,7 +224,7 @@ Import a new file of Intents in the tool: https://github.com/cllebrun/cllebrun.g
         "password": ""
       }
     },
-    ```
+  ```
 1.  We are going to create nodes to leverage the Weather forecast provided by the
 weather company service via IBM Cloud
 Function.
