@@ -347,4 +347,13 @@ Work on your first app. Make a major change to your app, for example:
 
 - Make a post from the front end to populate the database
 
+or
+
+- Make a get and display data you have created before in the database
+
+or
+
+- Change the UI in a significant way, add style.
+
+
 Commit and push your code to deploy your app !
