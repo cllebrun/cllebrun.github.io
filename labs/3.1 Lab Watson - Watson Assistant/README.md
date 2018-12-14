@@ -88,7 +88,7 @@ any
 city
 around the world.
 
-1.  On IBM Cloud deploy an instance of the service "Weather Company data" either using the graphic console or using the CF CLI.
+1.  On IBM Cloud deploy an instance of the service "Weather Company data" either using the graphic console or using the CF CLI US region, same space).
 
 1.  Open the services credentials (generate it if needed) and copy the username, password and host. You will need it later.
 
@@ -100,7 +100,7 @@ around the world.
 1.  Click on Start Creating:
 ![](./images/startcreating.png)
 
-  Make sure to select the region used by your Watson Assistant.
+  Make sure to select the region (US region, same space) used by your Watson Assistant.
 
 1.  Click Create Action
 1.  Enter Weather as name, keep Node.js 8, click Create:
