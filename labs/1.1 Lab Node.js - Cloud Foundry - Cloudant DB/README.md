@@ -11,7 +11,7 @@ By following this tutorial, you'll set up a development environment, deploy an a
 In the following lab, you will learn:
 
 + How to develop locally and deploy to the cloud
-+ How to create and bind a new service 
++ How to create and bind a new service
 + How to use the IBM Cloud Command Line Interface
 
 
@@ -36,9 +36,9 @@ In the following lab, you will learn:
 
 # Step 1 - Clone the sample app
 
-1. On your laptop, create a folder for the hands-On labs. 
+1. On your laptop, create a folder for the hands-On labs.
 2. On the command line, change the directory to where this folder is located
-3. Clone the sample app source code from git: 
+3. Clone the sample app source code from git:
 
   ```
   $ git clone https://github.com/IBM-Cloud/get-started-node
@@ -48,7 +48,7 @@ In the following lab, you will learn:
 # Step 2 - Run the node.js app locally
 
 1. Change the directory to where the sample app is loacted:
-  
+
   ```
   $ cd get-started-node
   ```
@@ -66,11 +66,11 @@ In the following lab, you will learn:
   ```
 
   The console output will look like:
-  
+
   ```
   ...
   > node server.js
-  
+
   To view your app, open this link in your browser: http://localhost:3000
   ```
 
@@ -86,7 +86,7 @@ To deploy to IBM Cloud, it can be helpful to set up a manifest.yml file. The man
     random-route: true
     memory: 128M
   ```
-  In this manifest.yml file, random-route: true generates a random route for your app to prevent your route from colliding with others. 
+  In this manifest.yml file, random-route: true generates a random route for your app to prevent your route from colliding with others.
 
 1.  Replace random-route: true with host: myChosenHostName, supplying a host name of your choice.
 
@@ -103,7 +103,7 @@ To deploy to IBM Cloud, it can be helpful to set up a manifest.yml file. The man
   ```
 1.  If it is asked, provide your account.
 1.  Target a Cloud Foundry org and space:
-  
+
   ```
   ibmcloud target --cf
   ```
@@ -160,7 +160,7 @@ We're now going to update your local code to point to this database. We'll creat
 1.  Copy and paste just the url from the credentials to the url field of the vcap-local.json file, replacing CLOUDANT_DATABASE_URL.
 
 1.  Run your application locally.
-  
+
   ```
   $ npm start
   ```

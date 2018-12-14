@@ -12,7 +12,7 @@ Getting Started with the IBM Cloud Platform !
 
 + [2.1 Lab Node.js - Developer tool: Toolchain](./labs/2.1%20Lab%20Node.js%20-%20Developer%20tool:%20Toolchain)
 
-+ [3.1 Lab Watson - Watson Conversation](./labs/3.1%20Lab%20Watson%20-%20Watson%20Conversation)
++ [3.1 Lab Watson - Watson Assistant](./labs/3.1%20Lab%20Watson%20-%20Watson%20Assistant)
 
 + [3.2 Lab Watson - Node-Red - OK Watson](./labs/3.2%20Lab%20Watson%20-%20Node-Red%20-%20OK%20Watson)
 
