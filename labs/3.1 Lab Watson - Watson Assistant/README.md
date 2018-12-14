@@ -15,10 +15,9 @@ In this lab, you go through a step-by-step process to create your first dialog f
 
 In the following lab, you will learn:
 
-+ How to train Watson to understand your users' input with intents and examples
-+ How to identify the terms that may vary in your users' input
-+ How to create the responses to your user's questions: Dialog Builder
-+ How to test and improve your dialog
+
++ How to use the Watson assistant toot
++ How to leverage Serverless functionalities
 
 
 # Pre-Requisites
@@ -28,15 +27,15 @@ In the following lab, you will learn:
 
 # Steps
 
-1. [Create a Watson Assistant service](#step-1---create-a-watson-assistant-service)
-2. [Create your workspace](#step-2---create-your-workspace)
-3. [Work with intents and examples](#step-3---work-with-intents-and-examples)
-4. [Work with entities](#step-4---work-with-entities)
-5. [Create a dialog](#step-5---create-a-dialog)
-6. [Integrate the dialog into a web app](#step-6---integrate-the-dialog-into-a-web-app)
+1. Create a Watson Assistant service
+2. Build a skill
+3. Improve using serverless
+
 
 
 # Step 1 - Create a Watson Assistant service
+
+1. Create a space in the US space (Dallas) for this lab.
 
 1. On the IBM Cloud Platform account dashboard, select Catalog from the menu bar.
 
@@ -206,23 +205,73 @@ function main(params) {
 
 1. Copy the Key value (which is actually username:password) and also the current namespace.
 
-1.  Go back to the Watson Assistant tool, select the Opening node in the dialog tab.
+1.  Go back to the Watson Assistant tool, select the Opening node in the Intent tab.
+Import a new file of Intents in the tool: https://github.com/cllebrun/cllebrun.github.io/blob/master/labs/3.1%20Lab%20Watson%20-%20Watson%20Assistant/WCS_Lab_intents%20Before%20Session%204.csv
 
-1. Edit the welcome, by clicking on the "..." menu and selection "open the json editor" on the right.
+1. In the dialog tab, edit the welcome, by clicking on the "..." menu and selection "open the json editor" on the right.
 
   Copy this part of th json under "Context" and fill it with your Function credentials:
 
   ```
-  "private":{
-      "mycredential":{
-        "username":"",
-        "password":""
+  "private": {
+      "location": {
+        "city": "Nice",
+        "latitude": "43.617584",
+        "longitude": "7.264981"
+      },
+      "mycredential": {
+        "user": "",
+        "password": ""
       }
-    }
+    },
     ```
+1.  We are going to create nodes to leverage the Weather forecast provided by the
+weather company service via IBM Cloud
+Function.
+
+1.  Select the  anything else node and
+Add a node
+above
+and fill it this
+Name :
+Call Weather Function
+Condition :
+#weather
+2.  Open the JSON editor
+3.  Copy Paste the code below. Add your namespace.
+```
+{
+  "output": {},
+  "actions": [
+        {
+        "name": "/<your_namespace> examples/Weather",
+        "type": "cloud_function",
+        "parameters": {
+          "latitude": "$private.location.latitude",
+          "longitude": "$private.location.longitude",
+          "timePeriod": "10day"
+         },
+        "credentials": "$private.mycredential",
+        "result_variable": "context.weather"
+        }
+      ]
+}
+```
+1.  Add a child to Call Weather Function node and fill it like this:
+Name: Display weather forecast
+condition:true
+response: The forecast today in "the city you have chosen for the coordinates" is $weather.narrative
+
+1.  Return to the "Call Weather Function" node and select the option "Skip user input"
+
+1. Close the node editor
+1. Test you serverless conversation:
+Enter: "What is the weather like ?"
+
+1.   The service should display the weather forecast.
 
 # Resources
 
 For additional resources pay close attention to the following:
 
-- [Watson Assistant Documentation](http://www.ibm.com/watson/developercloud/doc/conversation/index.shtml)
+- [Watson Assistant Documentation](https://console.bluemix.net/docs/services/assistant/getting-started.html#getting-started)
