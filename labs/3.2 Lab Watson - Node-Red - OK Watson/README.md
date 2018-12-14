@@ -69,5 +69,22 @@ In the following lab, you will learn:
 
 1.  Configure the Watson node (language).
 1.  Deploy with red button up and right. Trigger the microphone and speak.
-# Step 4 - Watson Visual Recognition
+# Step 4 - Watson Assistant
+
+1.  You already worked with Watson Assistant, drag and drop the node "Watson Assistant" in Node-RED.
+
+1. Build the following flow:
+<img src="./images/assistant.png"/>
+
+1. Configure the Assistant node with the info from your Assistant service in the Watson assistant tool:
+<img src="./images/assistant-cred.png"/>
+
+1. Configure the input node to test your flow with the function you created about Weather forecast in the last lab:
+<img src="./images/weatherinput.png"/>
+
+1. Change your flow to mix the services in the same flow:
+<img src="./images/mixandmatch.png"/>
+
+1. Test it
+
 # Step 5 - Watson Tone Analyser
