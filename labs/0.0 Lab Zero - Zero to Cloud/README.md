@@ -20,6 +20,7 @@ This lab is an introduction to IBM Cloud and its possibilities. No need any deve
 
 + Get a Node.js server to work locally [Download Node.js](https://nodejs.org/en/download/)
 + Install the IBM Cloud CLI (step 1 & 2) [IBM Cloud CLI Overview](https://console.bluemix.net/docs/cli/index.html#overview)
++ Install the [Git CLI](https://git-scm.com/downloads)
 + Get an [IBM Cloud Platform account](https://cloud.ibm.com/registration), or use an existing account.
 <img src="./images/register.png"/>
 
@@ -355,5 +356,6 @@ or
 
 - Change the UI in a significant way, add style.
 
+Help: https://github.com/IBM-Cloud/get-started-node
 
 Commit and push your code to deploy your app !
