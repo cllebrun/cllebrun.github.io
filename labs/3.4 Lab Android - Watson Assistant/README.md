@@ -4,7 +4,7 @@
 
 <img src="./images/cloud.png" width="20%"/>
 
-This lab is an introduction to IBM Cloud and Watson and its possibilities. You will need an IBM Cloud account in order to create your web application.  
+This lab is an introduction to IBM Cloud and Watson and its possibilities. You will need an IBM Cloud account in order to create your web application. Watson AI services can help you make your Android apps more accessible. Following this lab, you will learn how to create an Android-native voice-enabled chatbot with Watson services.
 
 # Objective
 
@@ -42,6 +42,8 @@ In this section, you will create the services required by the tutorial starting 
 + Click Service credentials on the left pane, click New credential and click Add.
 + Click View Credentials to see the credentials. Make note of the API Key and URL, you will need it for the mobile application.
 
+<img src="./images/step1-assistant-create.gif"/>
+
 ### Speech to Text
 
 The Speech to Text service converts the human voice into the written word that can be sent as an input to Watson Assistant service on IBM Cloud™.
@@ -59,3 +61,18 @@ The Text to Speech service processes text and natural language to generate synth
 + Click View Credentials to see the credentials. Make note of the API Key and URL, you will need it for the mobile application.
 
 # Step 2 - Work with Watson Assistant
+
+
+## Create a skill
+
+
+## Link the skill to an assistant
+An **assistant** is a cognitive bot that you can customize for your business needs, and deploy across multiple channels to bring help to your customers where and when they need it. You customize the assistant by adding to it the skills it needs to satisfy your customers' goals.
+
++ In the Watson Assistant tool, switch to **Assistants** and use **Create new**. Click **Create**.
++ Use **Add Dialog skill** to select the skill created in the previous sections.
+  + **Add existing skill**
+  + Select **Ana**
++ Under **View API Details** for the assistant, make note of the **Assistant ID**, you will need to reference it from the mobile application (in the config.xml file of the Android app).
+
+# Step 3 - Integrate with your Android mobile application
