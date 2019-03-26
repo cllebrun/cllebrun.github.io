@@ -39,10 +39,14 @@ In this section, you will create the services required by the tutorial starting 
 ### Watson Assistant
 
 + Go to the [IBM Cloud Catalog](https://cloud.ibm.com/catalog/) and select [Watson Assistant](https://cloud.ibm.com/catalog/services/watson-assistant-formerly-conversation) service > Lite plan. Click Create.
+
+
+<img src="./images/step1-assistant-create.gif"/>
+
 + Click Service credentials on the left pane, click New credential and click Add.
 + Click View Credentials to see the credentials. Make note of the API Key and URL, you will need it for the mobile application.
 
-<img src="./images/step1-assistant-create.gif"/>
+<img src="./images/step1-assistant-credentials.gif"/>
 
 ### Speech to Text
 
