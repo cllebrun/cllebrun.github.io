@@ -24,7 +24,11 @@ You have access to a Lite IBM Cloud account for free.
 
 # Steps
 
-1. Connect to your [IBM Cloud account](https://cloud.ibm.com/registration/?cm_mmc=droidcon2019)
+1. Create Watson services on your IBM Cloud account
+
+2. Work with Watson Assistant
+
+3. Integrate with your Android mobile application
 
 
-# Step 1 -
+# Step 1 - Create Watson services on your IBM Cloud account
