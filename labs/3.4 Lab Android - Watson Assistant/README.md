@@ -38,7 +38,7 @@ In this section, you will create the services required by the tutorial starting 
 
 ### Watson Assistant
 
-+ Go to the [IBM Cloud Catalog](https://cloud.ibm.com/catalog/) and select [Watson Assistant](https://cloud.ibm.com/catalog/services/watson-assistant-formerly-conversation) service > Lite plan. Click Create.
++ Go to the [**IBM Cloud Catalog**](https://cloud.ibm.com/catalog/) and select [Watson Assistant](https://cloud.ibm.com/catalog/services/watson-assistant-formerly-conversation) service > Lite plan. Click Create.
 
 
 <img src="./images/step1-assistant-create.gif"/>
@@ -52,17 +52,17 @@ In this section, you will create the services required by the tutorial starting 
 
 The Speech to Text service converts the human voice into the written word that can be sent as an input to Watson Assistant service on IBM Cloud™.
 
-+ Go to the [IBM Cloud Catalog](https://cloud.ibm.com/catalog/) and select [Speech to Text](https://cloud.ibm.com/catalog/services/speech-to-text) service > Lite plan. Click Create.
-+ Click Service credentials on the left pane and click New credential to add a new credential. Click Add.
-+ Click View Credentials to see the credentials. Make note of the API Key and URL, you will need it for the mobile application.
++ Go to the [**IBM Cloud Catalog**](https://cloud.ibm.com/catalog/) and select [Speech to Text](https://cloud.ibm.com/catalog/services/speech-to-text) service > Lite plan. Click **Create**.
++ Click **Service credentials** on the left pane and click **New credential** to add a new credential. Click **Add**.
++ Click **View Credentials** to see the credentials. Make note of the **API Key** and **URL**, you will need it for the mobile application.
 
 ### Text to Speech
 
 The Text to Speech service processes text and natural language to generate synthesized audio output complete with appropriate cadence and intonation. The service provides several voices and can be configured in the Android app.
 
-+ Go to the [IBM Cloud Catalog](https://cloud.ibm.com/catalog/) and select [Text to Speech](https://cloud.ibm.com/catalog/services/text-to-speech) service > Lite plan. Click Create.
-+ Click Service credentials on the left pane and click New credential to add a new credential. Click Add.
-+ Click View Credentials to see the credentials. Make note of the API Key and URL, you will need it for the mobile application.
++ Go to the [**IBM Cloud Catalog**](https://cloud.ibm.com/catalog/) and select [Text to Speech](https://cloud.ibm.com/catalog/services/text-to-speech) service > Lite plan. Click **Create**.
++ Click **Service credentials** on the left pane and click **New credential** to add a new credential. Click **Add**.
++ Click **View Credentials** to see the credentials. Make note of the **API Key** and **URL**, you will need it for the mobile application.
 
 # Step 2 - Work with Watson Assistant
 
@@ -77,6 +77,8 @@ An **assistant** is a cognitive bot that you can customize for your business nee
 + Use **Add Dialog skill** to select the skill created in the previous sections.
   + **Add existing skill**
   + Select **Ana**
-+ Under **View API Details** for the assistant, make note of the **Assistant ID**, you will need to reference it from the mobile application (in the config.xml file of the Android app).
++ Under **View API Details** for the assistant, make note of the **Assistant ID**, you will need to reference it from the mobile application (in the `config.xml` file of the Android app).
+
+<img src="./images/step2-linking.gif"/>
 
 # Step 3 - Integrate with your Android mobile application
