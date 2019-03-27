@@ -83,6 +83,11 @@ A skill is a container for the artifacts that define the conversation flow.
 
 For this tutorial, you will save and use <a href="https://cllebrun.github.io/labs/3.4%20Lab%20Android%20-%20Watson%20Assistant/concierge.json" download="concierge.json">concierge.json</a> file with predefined intents, entities and dialog flow to your machine.
 
++ Click on the **Skills** tab.
++ **Create new** then **Import skill** and choose the JSON file downloaded above.
++ Select **Everything** option and click **Import**. A new skill named "Virtual Concierge" is created with predefined intents, entities and dialog flow.
+
+
 ## Link the skill to an assistant
 An **assistant** is a cognitive bot that you can customize for your business needs, and deploy across multiple channels to bring help to your customers where and when they need it. You customize the assistant by adding to it the skills it needs to satisfy your customers' goals.
 
