@@ -6,6 +6,10 @@ visualise
 
 This lab is an introduction to IBM Cloud and Watson and its possibilities. You will need an IBM Cloud account in order to create your web application. Watson AI services can help you make your Android apps more accessible. Following this lab, you will learn how to create an Android-native voice-enabled chatbot with Watson services.
 
+The use case is about a Hotel Concierge Virtual assistant that could be accessed from the guest room, the hotel lobby or directly from the customers phones.
+Targeted end-users are Hotel customers.
+
+
 # Objective
 
 + Discover IBM Watson APIs
@@ -74,7 +78,10 @@ From the IBM Cloud Dashboard, on the resource summary, you can visualise your ap
 + Click on the **Launch Tool** button to start the Watson Assistant visual tool.
 
 ## Create a skill
-[TO DO; Go see the source](https://cloud.ibm.com/docs/tutorials?topic=solution-tutorials-android-watson-chatbot#create_workspace)
+
+A skill is a container for the artifacts that define the conversation flow.
+
+For this tutorial, you will save and use concierge.json file with predefined intents, entities and dialog flow to your machine.
 
 ## Link the skill to an assistant
 An **assistant** is a cognitive bot that you can customize for your business needs, and deploy across multiple channels to bring help to your customers where and when they need it. You customize the assistant by adding to it the skills it needs to satisfy your customers' goals.
