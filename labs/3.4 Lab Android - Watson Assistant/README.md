@@ -1,4 +1,4 @@
-
+visualise
 # 3.4 Lab Android - Watson Assistant
 
 
@@ -65,7 +65,13 @@ The Text to Speech service processes text and natural language to generate synth
 + Click **View Credentials** to see the credentials. Make note of the **API Key** and **URL**, you will need it for the mobile application.
 
 # Step 2 - Work with Watson Assistant
++ On the top left, click on the hamburger menu and select the **Dashboard**
 
+  <img src="./images/Dashboard.png" width="20%"/>
+
+From the IBM Cloud Dashboard, on the resource summary, you can visualise your apps, containers and services you have provisioned.
++ Select your instance of **Watson Assistant** from the services category.
++ Click on the **Launch Tool** button to start the Watson Assistant visual tool.
 
 ## Create a skill
 [TO DO; Go see the source](https://cloud.ibm.com/docs/tutorials?topic=solution-tutorials-android-watson-chatbot#create_workspace)
