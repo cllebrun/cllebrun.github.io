@@ -68,7 +68,7 @@ The Text to Speech service processes text and natural language to generate synth
 
 
 ## Create a skill
-
+[TO DO; Go see the source](https://cloud.ibm.com/docs/tutorials?topic=solution-tutorials-android-watson-chatbot#create_workspace)
 
 ## Link the skill to an assistant
 An **assistant** is a cognitive bot that you can customize for your business needs, and deploy across multiple channels to bring help to your customers where and when they need it. You customize the assistant by adding to it the skills it needs to satisfy your customers' goals.
@@ -82,3 +82,33 @@ An **assistant** is a cognitive bot that you can customize for your business nee
 <img src="./images/step2-linking.gif"/>
 
 # Step 3 - Integrate with your Android mobile application
+
+The repository contains Android application code with required gradle dependencies.
+
++ Run the below command to clone the GitHub repository:
+```
+git clone https://github.com/IBM-Cloud/chatbot-watson-android
+```
+
++ Launch Android Studio > **Open an existing Android Studio project** and point to the downloaded code. **Gradle** build will automatically be triggered and all the dependencies will be downloaded.
++ Open `app/src/main/res/values/config.xml` to see the placeholders (`ASSISTANT_ID_HERE`) for service credentials. Enter the service credentials (you saved earlier in step 1) in their respective placeholders and save the file.
++ Build the project and start the application on a real device or with a simulator.
++ **Enter your query** in the space provided below and click the arrow icon to send the query to Watson Assistant service.
++ The response will be passed to Text to Speech service and you should hear a voice reading out the response.
++ Click the **mic** icon in the left bottom corner of the app to input speech that gets converted to text and then can be sent to Watson Assistant service by clicking the arrow icon.
+
+# Cleanup
+To remove the resources that you have created following this lab:
++ Navigate to [Resource List](https://cloud.ibm.com/resources/)
++ Delete the services you have created:
+  + IBM Watson™ Assistant
+  + IBM® Speech to Text
+  + IBM® Text to Speech
+
+# Other resources
++ [Original tutorial](https://cloud.ibm.com/docs/tutorials?topic=solution-tutorials-android-watson-chatbot)
++ [Java SDK](https://github.com/watson-developer-cloud/java-sdk)
++ [IBM Watson Documentation](https://cloud.ibm.com/developer/watson/documentation)
++ [Android SDK](https://github.com/watson-developer-cloud/android-sdk)*
+
+\* This is an Android client library to assist with using the Watson services, a collection of REST APIs and SDKs that use cognitive computing to solve complex problems. This SDK is built for use with the Watson Java SDK.
