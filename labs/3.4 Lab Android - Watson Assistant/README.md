@@ -81,7 +81,7 @@ From the IBM Cloud Dashboard, on the resource summary, you can visualise your ap
 
 A skill is a container for the artifacts that define the conversation flow.
 
-For this tutorial, you will save and use concierge.json file with predefined intents, entities and dialog flow to your machine.
+For this tutorial, you will save and use <a href="https://raw.githubusercontent.com/cllebrun/cllebrun.github.io/master/labs/3.4%20Lab%20Android%20-%20Watson%20Assistant/concierge.json">concierge.json</a> file with predefined intents, entities and dialog flow to your machine.
 
 ## Link the skill to an assistant
 An **assistant** is a cognitive bot that you can customize for your business needs, and deploy across multiple channels to bring help to your customers where and when they need it. You customize the assistant by adding to it the skills it needs to satisfy your customers' goals.
