@@ -71,7 +71,7 @@ The Text to Speech service processes text and natural language to generate synth
 # Step 2 - Work with Watson Assistant
 + On the top left, click on the hamburger menu and select the **Dashboard**
 
-  <img src="./images/Dashboard.png" width="20%"/>
+  <img src="./images/dashboard.png" width="20%"/>
 
 From the IBM Cloud Dashboard, on the resource summary, you can visualise your apps, containers and services you have provisioned.
 + Select your instance of **Watson Assistant** from the services category.
