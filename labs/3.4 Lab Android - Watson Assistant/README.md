@@ -91,14 +91,14 @@ For this tutorial, you will save and use <a href="https://cllebrun.github.io/lab
 Try it panel is used for testing in the lab guide.
 When WA is training on recently added data. You must wait for the message highlighted with purple to clear before you can test newly added intents, utterances, entities. Watson will respond, but you will get unpredictable results until the training is complete.
 
-  <img src="./images/tryitout.png" width="20%"/>
+  <img src="./images/tryitout.png" width="50%"/>
 
 + For example, you can ask your virtual concierge to order a pizza, specifying the toppings and the size of your pizza:
 "I would like to order a small pepperoni pizza with cheese and tomatoes but no anchovies"
 
 You will get how Watson Assistant understood your request, what intent and which entities it recognises. You get the answer which comes from your dialog design.
 
-  <img src="./images/pepperonipizza.png" width="20%"/>
+  <img src="./images/pepperonipizza.png" width="50%"/>
 
 + You can find the several topics Watson Assistant handles in this specific virtual concierge skill <a href="https://app.mindmup.com/map/_free/2019/04/e3bdd970548e11e9891b57e20ba3b8b1" >here</a> and try it out directly in this tool !
 
