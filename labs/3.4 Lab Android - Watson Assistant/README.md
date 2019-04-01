@@ -87,6 +87,20 @@ For this tutorial, you will save and use <a href="https://cllebrun.github.io/lab
 + **Create new** then **Import skill** and choose the JSON file downloaded above.
 + Select **Everything** option and click **Import**. A new skill named "Virtual Concierge" is created with predefined intents, entities and dialog flow.
 
++ On the Dialog tab, you can design and test your conversation. Open the **Try it out** panel on the top right.
+Try it panel is used for testing in the lab guide.
+When WA is training on recently added data. You must wait for the message highlighted with purple to clear before you can test newly added intents, utterances, entities. Watson will respond, but you will get unpredictable results until the training is complete.
+
+  <img src="./images/tryitout.png" width="20%"/>
+
++ For example, you can ask your virtual concierge to order a pizza, specifying the toppings and the size of your pizza:
+"I would like to order a small pepperoni pizza with cheese and tomatoes but no anchovies"
+
+You will get how Watson Assistant understood your request, what intent and which entities it recognises. You get the answer which comes from your dialog design.
+
+  <img src="./images/pepperonipizza.png" width="20%"/>
+
++ You can find the several topics Watson Assistant handles in this specific virtual concierge skill <a href="https://app.mindmup.com/map/_free/2019/04/e3bdd970548e11e9891b57e20ba3b8b1" >here</a> and try it out directly in this tool !
 
 ## Link the skill to an assistant
 An **assistant** is a cognitive bot that you can customize for your business needs, and deploy across multiple channels to bring help to your customers where and when they need it. You customize the assistant by adding to it the skills it needs to satisfy your customers' goals.
