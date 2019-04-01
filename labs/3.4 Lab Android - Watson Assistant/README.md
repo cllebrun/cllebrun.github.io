@@ -81,7 +81,7 @@ From the IBM Cloud Dashboard, on the resource summary, you can visualise your ap
 
 A skill is a container for the artifacts that define the conversation flow.
 
-For this tutorial, you will save and use <a href="https://cllebrun.github.io/labs/3.4%20Lab%20Android%20-%20Watson%20Assistant/VirtualConcierge.json" download="VirtualConcierge.json">concierge.json</a> file with predefined intents, entities and dialog flow to your machine.
+For this tutorial, you will save and use <a href="https://cllebrun.github.io/labs/3.4%20Lab%20Android%20-%20Watson%20Assistant/VirtualConcierge.json" download="VirtualConcierge.json">VirtualConcierge.json</a> file with predefined intents, entities and dialog flow to your machine.
 
 + Click on the **Skills** tab.
 + **Create new** then **Import skill** and choose the JSON file downloaded above.
