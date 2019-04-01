@@ -94,7 +94,7 @@ An **assistant** is a cognitive bot that you can customize for your business nee
 + In the Watson Assistant tool, switch to **Assistants** and use **Create new**. Click **Create**.
 + Use **Add Dialog skill** to select the skill created in the previous sections.
   + **Add existing skill**
-  + Select **Ana**
+  + Select **Virtual Concierge**
 + Under **View API Details** for the assistant, make note of the **Assistant ID**, you will need to reference it from the mobile application (in the `config.xml` file of the Android app).
 
 <img src="./images/step2-linking.gif"/>
