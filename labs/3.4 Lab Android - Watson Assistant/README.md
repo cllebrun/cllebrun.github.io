@@ -35,6 +35,8 @@ You have access to a Lite IBM Cloud account for free.
 
 3. Integrate with your Android mobile application
 
+3. Extend your chatbots skills
+
 
 # Step 1 - Create Watson services on your IBM Cloud account
 
@@ -128,6 +130,8 @@ git clone https://github.com/IBM-Cloud/chatbot-watson-android
 + **Enter your query** in the space provided below and click the arrow icon to send the query to Watson Assistant service.
 + The response will be passed to Text to Speech service and you should hear a voice reading out the response.
 + Click the **mic** icon in the left bottom corner of the app to input speech that gets converted to text and then can be sent to Watson Assistant service by clicking the arrow icon.
+
+# Step 4 - Extend your chatbots skills
 
 # Cleanup
 To remove the resources that you have created following this lab:
