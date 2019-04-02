@@ -262,7 +262,7 @@ These are examples of jokes Watson could answer.
 + Still on this JSON editor, on the last line, replace the value **sequential** by **random** for the "selection_policy"
 + Close the node and try it out! Watson may take some seconds to retrain, then ask him to tell you a joke!
 
-+ Add another response type to your node: Open your **Joke** node again
++ Add another response type to your node: Open your **Jokes** node again
 + Under your text response click on **Add response type**
 + Select **Image**
 + Add a title like "GIF" and a description like "an image of a bear saying HA HA HA"
