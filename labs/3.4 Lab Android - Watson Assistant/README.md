@@ -133,6 +133,129 @@ git clone https://github.com/IBM-Cloud/chatbot-watson-android
 
 # Step 4 - Extend your chatbots skills
 
+You are now going to extend your chatbot skills by adding a new intent to be recognise and working on the dialog flow.
+
++ In Watson Assistant, go to your **Intents** tab in your skill "Virtual Concierge". Note that there is one existing intent defined called "General_Jokes". We are going to use this intent to add a "telling jokes" skill to our bot !
+
++ Switch to the **Dialog** tab.
++ Add a node below the **start of the conversation** node:
+
+  <img src="./images/node_below.png" width="50%"/>
+
++ Name it **Jokes**
++ Complete with "If assistant recognizes:" **General_Jokes**. This tests if the the assistant recognizes this specific intent.
+
++ Click on the 3 dots next to the "Then respond with" and open the JSON editor.
++ In the **values** table, add the following values:
+```
+         {
+           "text": "What's the advantage of living in Switzerland? Well, the flag is a big plus."
+         },
+         {
+           "text": "Why did the chicken cross the road? To get to the other side."
+         },
+         {
+           "text": "People are making apocalypse jokes like there's no tomorrow."
+         },
+         {
+           "text": "What's the most important letter in the British alphabet? T"
+         },
+         {
+           "text": "What's yellow and hurts when it gets in your eye? A bulldozer."
+         },
+         {
+           "text": "Did you hear about the restaurant on the moon? Great food, no atmosphere."
+         },
+         {
+           "text": "What do you call a fake noodle? An Impasta."
+         },
+         {
+           "text": "How many apples grow on a tree? All of them."
+         },
+         {
+           "text": "Want to hear a joke about paper? Nevermind it's tearable."
+         },
+         {
+           "text": "I just watched a program about beavers. It was the best dam program I've ever seen."
+         },
+         {
+           "text": "Why did the coffee file a police report? It got mugged."
+         },
+         {
+           "text": "How does a penguin build it's house? Igloos it together."
+         },
+         {
+           "text": "Dad, did you get a haircut? No I got them all cut."
+         },
+         {
+           "text": "What do you call a Mexican who has lost his car? Carlos."
+         },
+         {
+           "text": "Dad, can you put my shoes on? No, I don't think they'll fit me."
+         },
+         {
+           "text": "Why did the scarecrow win an award? Because he was outstanding in his field."
+         },
+         {
+           "text": "Why don't skeletons ever go trick or treating? Because they have no body to go with."
+         },
+         {
+           "text": "I'll call you later. Don't call me later, call me Dad."
+         },
+         {
+           "text": "Want to hear a joke about construction? I'm still working on it."
+         },
+         {
+           "text": "What do you call cheese that isn't yours? Nacho Cheese."
+         },
+         {
+           "text": "Whenever the cashier at the grocery store asks my dad if he would like the milk in a bag he replies, \"No, just leave it in the carton!\""
+         },
+         {
+           "text": "5/4 of people admit that they’re bad with fractions."
+         },
+         {
+           "text": "Two goldfish are in a tank. One says to the other, \"do you know how to drive this thing?\""
+         },
+         {
+           "text": "The rotation of earth really makes my day."
+         },
+         {
+           "text": "What's brown and sticky? A stick."
+         },
+         {
+           "text": "Why do you never see elephants hiding in trees? Because they're so good at it."
+         },
+         {
+           "text": "A furniture store keeps calling me. All I wanted was one night stand."
+         },
+         {
+           "text": "I'm so good at sleeping. I can do it with my eyes closed."
+         },
+         {
+           "text": "When you look really closely, all mirrors look like eyeballs."
+         },
+         {
+           "text": "My friend says to me: \"What rhymes with orange\" I said: \"No it doesn't\""
+         },
+         {
+           "text": "I couldn't figure out why the baseball kept getting larger. Then it hit me."
+         },
+         {
+           "text": "What do you call a frenchman wearing sandals? Phillipe Phillope."
+         },
+         {
+           "text": "I know a lot of jokes about unemployed people but none of them work."
+         },
+         {
+           "text": "My wife is really mad at the fact that I have no sense of direction. So I packed up my stuff and right."
+         }
+```
+These are examples of jokes Watson could answer.
+
++ Still on this JSON editor, on the last line, replace the value **sequential** by **random** for the "selection_policy"
++ Close the node and try it out ! Watson may take some seconds to retrain.
+
 # Cleanup
 To remove the resources that you have created following this lab:
 + Navigate to [Resource List](https://cloud.ibm.com/resources/)
