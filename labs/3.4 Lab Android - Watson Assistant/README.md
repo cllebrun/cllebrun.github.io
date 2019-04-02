@@ -49,8 +49,9 @@ In this section, you will create the services required by the tutorial starting 
 
 <img src="./images/step1-assistant-create.gif"/>
 
-+ Click Service credentials on the left pane, click New credential and click Add.
-+ Click View Credentials to see the credentials. Make note of the API Key and URL, you will need it for the mobile application.
++ Click **Service credentials** on the left pane and verify that "Auto-generated credentials" have been created for you.
+  + If there are none click **New credential** and click **Add**.
++ Click **View Credentials** to see the credentials. Make note of the **API Key** and **URL**, you will need it for the mobile application.
 
 <img src="./images/step1-assistant-credentials.gif"/>
 
@@ -59,7 +60,8 @@ In this section, you will create the services required by the tutorial starting 
 The Speech to Text service converts the human voice into the written word that can be sent as an input to Watson Assistant service on IBM Cloud™.
 
 + Go to the [**IBM Cloud Catalog**](https://cloud.ibm.com/catalog/) and select [Speech to Text](https://cloud.ibm.com/catalog/services/speech-to-text) service > Lite plan. Click **Create**.
-+ Click **Service credentials** on the left pane and click **New credential** to add a new credential. Click **Add**.
++ Click **Service credentials** on the left pane and verify that "Auto-generated credentials" have been created for you.
+  + If there are none click **New credential** to add a new credential. Click **Add**.
 + Click **View Credentials** to see the credentials. Make note of the **API Key** and **URL**, you will need it for the mobile application.
 
 ### Text to Speech
@@ -67,7 +69,8 @@ The Speech to Text service converts the human voice into the written word that c
 The Text to Speech service processes text and natural language to generate synthesized audio output complete with appropriate cadence and intonation. The service provides several voices and can be configured in the Android app.
 
 + Go to the [**IBM Cloud Catalog**](https://cloud.ibm.com/catalog/) and select [Text to Speech](https://cloud.ibm.com/catalog/services/text-to-speech) service > Lite plan. Click **Create**.
-+ Click **Service credentials** on the left pane and click **New credential** to add a new credential. Click **Add**.
++ Click **Service credentials** on the left pane and verify that "Auto-generated credentials" have been created for you.
+  + If there are none click **New credential** to add a new credential. Click **Add**.
 + Click **View Credentials** to see the credentials. Make note of the **API Key** and **URL**, you will need it for the mobile application.
 
 # Step 2 - Work with Watson Assistant
@@ -138,7 +141,7 @@ git clone https://github.com/rogerxaic/chatbot-watson-android.git
 
 You are now going to extend your chatbot skills by adding a new intent to be recognized and working on the dialog flow.
 
-+ In Watson Assistant, go to your **Intents** tab in your skill "Virtual Concierge". Note that there is one existing intent defined called "General_Jokes". We are going to use this intent to add a "telling jokes" skill to our bot !
++ In Watson Assistant, go to your **Intents** tab in your skill "Virtual Concierge". Note that there is one existing intent defined called "General_Jokes". We are going to use this intent to add a "telling jokes" skill to our bot!
 
 + Switch to the **Dialog** tab.
 + Add a node below the **start of the conversation** node:
@@ -146,7 +149,7 @@ You are now going to extend your chatbot skills by adding a new intent to be rec
   <img src="./images/node_below.png" width="50%"/>
 
 + Name it **Jokes**
-+ Complete with "If assistant recognizes:" **General_Jokes**. This tests if the the assistant recognizes this specific intent.
++ Complete with "If assistant recognizes:" **General_Jokes**. This tests if the assistant recognizes this specific intent.
 
 + Click on the 3 dots next to the "Then respond with" and open the JSON editor.
 + In the **values** table, add the following values:
@@ -257,13 +260,13 @@ You are now going to extend your chatbot skills by adding a new intent to be rec
 These are examples of jokes Watson could answer.
 
 + Still on this JSON editor, on the last line, replace the value **sequential** by **random** for the "selection_policy"
-+ Close the node and try it out ! Watson may take some seconds to retrain, then ask him to tell you a joke !
++ Close the node and try it out! Watson may take some seconds to retrain, then ask him to tell you a joke!
 
 + Add another response type to your node: Open your **Joke** node again
 + Under your text response click on **Add response type**
 + Select **Image**
-+ Add a title like "GIF" and a description like "an image of of a bear saying HA HA HA"
-+ Add a url for the gif, for example:
++ Add a title like "GIF" and a description like "an image of a bear saying HA HA HA"
++ Add a URL for the gif, for example:
 ```
 https://media2.giphy.com/media/3oFzlW4yxJIGR4SrSg/giphy.gif?cid=790b76115ca367ef554b44792eb4312a
 ```
