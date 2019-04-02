@@ -126,7 +126,10 @@ git clone https://github.com/IBM-Cloud/chatbot-watson-android
 
 + Launch Android Studio > **Open an existing Android Studio project** and point to the downloaded code. **Gradle** build will automatically be triggered and all the dependencies will be downloaded.
 + Open `app/src/main/res/values/config.xml` to see the placeholders (`ASSISTANT_ID_HERE`) for service credentials. Enter the service credentials (you saved earlier in step 1) in their respective placeholders and save the file.
+
+*Note that the `ASSISTANT_ID` refers to the assistant you've created in step 2 and the other API keys/Urls refer to the services you've created in step 1.*
 + Build the project and start the application on a real device or with a simulator.
+
 + **Enter your query** in the space provided below and click the arrow icon to send the query to Watson Assistant service.
 + The response will be passed to Text to Speech service and you should hear a voice reading out the response.
 + Click the **mic** icon in the left bottom corner of the app to input speech that gets converted to text and then can be sent to Watson Assistant service by clicking the arrow icon.
