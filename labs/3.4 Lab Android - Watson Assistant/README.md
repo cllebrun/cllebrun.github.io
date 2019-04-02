@@ -121,7 +121,7 @@ The repository contains Android application code with required gradle dependenci
 
 + Run the below command to clone the GitHub repository:
 ```
-git clone https://github.com/IBM-Cloud/chatbot-watson-android
+git clone https://github.com/rogerxaic/chatbot-watson-android.git
 ```
 
 + Launch Android Studio > **Open an existing Android Studio project** and point to the downloaded code. **Gradle** build will automatically be triggered and all the dependencies will be downloaded.
@@ -257,7 +257,19 @@ You are now going to extend your chatbot skills by adding a new intent to be rec
 These are examples of jokes Watson could answer.
 
 + Still on this JSON editor, on the last line, replace the value **sequential** by **random** for the "selection_policy"
-+ Close the node and try it out ! Watson may take some seconds to retrain.
++ Close the node and try it out ! Watson may take some seconds to retrain, then ask him to tell you a joke !
+
++ Add another response type to your node: Open your **Joke** node again
++ Under your text response click on **Add response type**
++ Select **Image**
++ Add a title like "GIF" and a description like "an image of of a bear saying HA HA HA"
++ Add a url for the gif, for example:
+```
+https://media2.giphy.com/media/3oFzlW4yxJIGR4SrSg/giphy.gif?cid=790b76115ca367ef554b44792eb4312a
+```
+
+Test your chatbot. It's now returning two types of responses when you ask him to tell a joke.
+
 
 # Cleanup
 To remove the resources that you have created following this lab:
