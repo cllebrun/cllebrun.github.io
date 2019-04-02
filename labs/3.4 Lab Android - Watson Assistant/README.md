@@ -98,7 +98,7 @@ When WA is training on recently added data. You must wait for the message highli
 + For example, you can ask your virtual concierge to order a pizza, specifying the toppings and the size of your pizza:
 "I would like to order a small pepperoni pizza with cheese and tomatoes but no anchovies"
 
-You will get how Watson Assistant understood your request, what intent and which entities it recognises. You get the answer which comes from your dialog design.
+You will get how Watson Assistant understood your request, what intent and which entities it recognizes. You get the answer which comes from your dialog design.
 
   <img src="./images/pepperonipizza.png" width="50%"/>
 + You can also ask about gym, sauna, restaurant opening hours, ask for information about different types of restaurants ...
@@ -136,7 +136,7 @@ git clone https://github.com/rogerxaic/chatbot-watson-android.git
 
 # Step 4 - Extend your chatbots skills
 
-You are now going to extend your chatbot skills by adding a new intent to be recognise and working on the dialog flow.
+You are now going to extend your chatbot skills by adding a new intent to be recognized and working on the dialog flow.
 
 + In Watson Assistant, go to your **Intents** tab in your skill "Virtual Concierge". Note that there is one existing intent defined called "General_Jokes". We are going to use this intent to add a "telling jokes" skill to our bot !
 
