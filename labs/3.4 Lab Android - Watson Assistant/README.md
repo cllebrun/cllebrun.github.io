@@ -101,7 +101,7 @@ When WA is training on recently added data. You must wait for the message highli
 You will get how Watson Assistant understood your request, what intent and which entities it recognises. You get the answer which comes from your dialog design.
 
   <img src="./images/pepperonipizza.png" width="50%"/>
-
++ You can also ask about gym, sauna, restaurant opening hours, ask for information about different types of restaurants ...
 + You can find the several topics Watson Assistant handles in this specific virtual concierge skill <a href="https://app.mindmup.com/map/_free/2019/04/e3bdd970548e11e9891b57e20ba3b8b1" >here</a> and try it out directly in this tool !
 
 ## Link the skill to an assistant
