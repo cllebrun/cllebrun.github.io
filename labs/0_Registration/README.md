@@ -9,4 +9,12 @@
 
 # Add a promocode to your IBM Cloud account
 
-+ Once you are logged in to your IBM Cloud account, you can add a promocode:
++ Convert your Lite account to a trial account:
+
+<img src="./images/code.gif"/>
+
+Once you applied your code, you get more resources on IBM Cloud!
+
+Tour trial account is valid for 6 months in general.
+
+<img src="./images/codeapplied.png"/>
