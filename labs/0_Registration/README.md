@@ -15,6 +15,6 @@
 
 Once you applied your code, you get access to more resources on IBM Cloud!
 
-Your Trial account is valid for about 6 months (depending of your code).
+Your Trial account is valid for about 6 months (depending on your code).
 
 <img src="./images/codeapplied.png"/>
