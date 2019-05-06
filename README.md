@@ -4,6 +4,8 @@ Getting Started with the IBM Cloud Platform !
 
 # List of Labs
 
++ [0_Registration](./labs/0_Registration)
+
 + [0.0 Lab Zero - Zero to Cloud](./labs/0.0%20Lab%20Zero%20-%20Zero%20to%20Cloud)
 
 + [1.1 Lab Node.js - Cloud Foundry - Cloudant DB](./labs/1.1%20Lab%20Node.js%20-%20Cloud%20Foundry%20-%20Cloudant%20DB)
