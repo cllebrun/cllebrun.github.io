@@ -2,7 +2,8 @@
 # Create an IBM Cloud account in the US region
 
 Create an IBM Cloud account in the US region. You need an email address.
-<img src="./images/cloud-registration.gif" width="20%"/>
+
+	<img src="./images/cloud-registration.gif" />
 
 Look at your emails and confirm the registration
 
