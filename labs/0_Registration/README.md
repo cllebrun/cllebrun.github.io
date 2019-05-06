@@ -15,6 +15,6 @@
 
 Once you applied your code, you get more resources on IBM Cloud!
 
-Tour trial account is valid for 6 months in general.
+Your trial account is valid for about 6 months (depending of your code).
 
 <img src="./images/codeapplied.png"/>
