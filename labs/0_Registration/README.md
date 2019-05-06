@@ -9,7 +9,7 @@
 
 # Add a promocode to your IBM Cloud account
 
-+ Convert your Lite account to a Trial account:
++ Convert your **Lite** account to a **Trial** account:
 
 <img src="./images/code.gif"/>
 
