@@ -1,7 +1,7 @@
 
 # Create an IBM Cloud account in the US region
 
-+ Create an IBM Cloud account in the US region. You need an email address.
++ Create an IBM Cloud account in the **US region**. You need an email address.
 
 <img src="./images/cloud-registration.gif"/>
 
