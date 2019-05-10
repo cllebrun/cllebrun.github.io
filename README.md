@@ -18,7 +18,7 @@ Getting Started with the IBM Cloud Platform !
 
 + [3.2 Lab Watson - Node-Red - OK Watson](./labs/3.2%20Lab%20Watson%20-%20Node-Red%20-%20OK%20Watson)
 
-+ [3.3 Lab Watson - Watson Visual Recognition]
++ [3.3 Lab Watson - Watson Visual Recognition](./labs/3.3%20Lab%20-%20Watson%20Visual%20Recognition)
 
 + [3.4 Lab Android - Watson Assistant](./labs/3.4%20Lab%20Android%20-%20Watson%20Assistant)
 
