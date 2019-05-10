@@ -83,3 +83,40 @@ Before creating a custom model, let's check out the General model and the Food m
   <img src="./images/test-general.png"/>
 
 13. Locate your favorite image search tool to find test images, use your personal images or drag images from [Test images folder](https://github.com/cllebrun/cllebrun.github.io/tree/master/labs/3.3%20Lab%20Watson%20-%20Watson%20Visual%20Recognition/Lab1%20-%20Test%20Images)
+  <img src="./images/test-general-images.png"/>
+
+Notice it displays the confidence score (which is the statistical probability of this classification against other classifiers in this model).
+
+Now let's explore the Faces model.
+
+14. Click the watson-vision-combined-dsx link to return to the model choices.
+
+15. Click the Test button of the Faces model.
+
+16. Click the Test tab of this model then drag images from [Test images folder](https://github.com/cllebrun/cllebrun.github.io/tree/master/labs/3.3%20Lab%20Watson%20-%20Watson%20Visual%20Recognition/Lab1%20-%20Test%20Images) on the canvas.
+
+<img src="./images/test-faces-images.png"/>
+As you can see, the Faces model not only detect the number of persons, but also the gender and an estimate of the age. It also locates the position of each faces on the picture.
+
+Out of the box, Watson can tell you what kind of objects are in a photo even though these are your private photos that have not been indexed by a search engine nor contain labeled tags that tell Watson what the photo is about -- instead Watson can deduce this by comparing your photo against the millions of labeled photos that Watson has been trained on.
+
+Yet still, these millions of photos are a drop in the bucket compared to how many photos are in the world and only come from the small 20% of consumer facing data, which leaves 80% of data behind your firewall -- and inside this data is your companies competitive edge.
+
+Therefore, let's examine how easy it is to teach Watson something that consumer oriented AI doesn't do.
+
+# Step 2 - Creating custom classifier with UI
+
+Objectives : Teaching Watson New Tricks
+
+The Visual Recognition service is trained by providing example images for each classification bucket -- the more examples you provide, the better the accuracy. After Watson has trained itself on your images, then it will classify a new image that it has never seen before and calculate how confident it is that it belongs to one of your classification types.
+
+1. Once again click the **watson_vision_combined-dsx** service link to return to the model choices.
+
+2. Click on the **Create Model** button on the Classify Images tile.
+  <img src="./images/classify-images.png"/>
+
+3. Rename your model "Default Custom Model" by "PizzaConditionModel"
+
+4. You will now load images create your model classes. The pane to manage file upload is shown on the right side of your screen and is displayed clicking the Find and add images button on the toolbar.
+
+  <img src="./images/upload-jpeg.png"/>
