@@ -117,6 +117,7 @@ The Visual Recognition service is trained by providing example images for each c
 
 3. Rename your model "Default Custom Model" by "PizzaConditionModel"
 
-4. You will now load images create your model classes. The pane to manage file upload is shown on the right side of your screen and is displayed clicking the Find and add images button on the toolbar.
+4. You will now load images create your model classes. The pane to manage file upload is shown on the right side of your screen.
+Click the Browse button to upload a zip file containing at least 10 photos (.jpg or .png) for good pizzas, at least 10 photos for bad pizzas, and 10 photos for not-pizzas. You can also drag and drop from your file explorer good_pizza_images.zip, bad_pizza_images.zip and not_pizza_images.zip in the [Lab 2 - Training Set folder](https://github.com/cllebrun/cllebrun.github.io/tree/master/labs/3.3%20Lab%20Watson%20-%20Watson%20Visual%20Recognition/Lab2%20-%20Training%20Set).
 
   <img src="./images/upload-jpeg.png"/>
