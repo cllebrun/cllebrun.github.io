@@ -168,10 +168,64 @@ Nodes are blocks that represent components of a larger system, in Node-RED's cas
 
   <img src="./images/node-red-creation.png"/>
 
-3. When your app is running, click on the "Visit app URL" link to launch your app:
+3. When your app is started, click on the "Visit app URL" link to launch your app:
 
   <img src="./images/visit-app-url.png"/>
 
-4. Click Next, you can secure your app (which is a code editor) with a login/password, this is recommended. Clickc Next, next, finish.
+4. Click Next, you can secure your app (which is a code editor) with a login/password, this is recommended. Click Next, next, finish.
 
 5. Launch Node-RED by clicking on the "Go to your Node-RED editor" button. Login if needed.
+
+**Create a simple flow with Visual Recognition**
+
+6. Drag and drop the nodes **Inject**, **visual recognition** and **debug** on your Node-RED workspace. Wire them together.
+
+  <img src="./images/nodered1.png"/>
+
+
+7. You need to configure the **visual recognition** node. Double click on it to open it, you need an **API Key** and to select the right **endpoint url**.
+
+You can find these credentials from Visual Recognition Service created in Step 1:
+
+- go to https://dataplatform.ibm.com/data/services?target=watson
+- click on you visual recognition instance (watson-vision-combined-dsx)
+- click on Credentials tab and View credentials
+- copy the apikey value
+
+
+8. In Node-RED, paste the API Key value in the API Key field in your node.
+
+9. Select https://gateway.watsonplatform.net/visual-recognition/api from the dropdown next to Service Endpoint. Click Done.
+
+  <img src="./images/nodered2.png"/>
+
+10. Open the **Inject** node and give an image URL as a string input: https://watson-visual-recognition-duo-dev.ng.bluemix.net/images/classify/small/computer_chip.jpg
+Click Done.
+
+  <img src="./images/nodered3.png"/>
+
+11. Open the **Debug** node, and select "complete msg object" as output. Click Done.
+
+  <img src="./images/nodered4.png"/>
+
+12. Deploy your flow by clicking on the red button on your Node-RED workspace (up and right).
+
+  <img src="./images/nodered5.png"/>
+
+13. Click on the square next to the inject node. By doing so, it will set the payload part of the msg object as the image URL we want to send to Visual Recognition
+
+    Node-RED is based on a msg object that "flows" from one node to another.
+    - Each node can use all the msg object, or subpart of it to do its processing.
+    - Each node must send back the msg object with updated content, or a new content.
+    - The "main" part of the msg object is the msg.payload part
+    - Watson Visual Recognition is loading the image from the msg.payload URL, and classifying the image with the specified classifier (here the default classifier)
+    - Watson Visual Recognition node return its results in the msg.result object.
+    - Debug node displays the msg object in the debug tab
+
+14. Expand the msg object to discover the datastructure of msg.result
+
+    You can see, it is the same as what we have seen in the previous lab, using the APIs.
+
+    <img src="./images/nodered6.png"/>
+
+**Create a flow using your custom model**
