@@ -222,6 +222,7 @@ Click Done.
     - Watson Visual Recognition node return its results in the msg.result object.
     - Debug node displays the msg object in the debug tab
 
+
 14. Expand the msg object to discover the datastructure of msg.result
 
     You can see, it is the same as what we have seen in the previous lab, using the APIs.
