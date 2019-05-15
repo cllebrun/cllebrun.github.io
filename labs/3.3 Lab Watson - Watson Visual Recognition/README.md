@@ -230,3 +230,60 @@ Click Done.
     <img src="./images/nodered6.png"/>
 
 **Create a flow using your custom model**
+
+In this part, we will discover how to set the parameters of the Visual Recognition node
+
+We will use the **Change** node to define some part of the msg object that will be used by Visual Recognition node.
+
+  <img src="./images/nodered7.png"/>
+
+- msg.params["detect_mode"] : A setting of "classify" or "faces" indicating the visual recognition feature required. "Default" is "classify" (string) (Optional)
+- msg.params["classifier_ids"] : A comma-separated list of the classifier IDs used to classify the images. "Default" is the classifier_id of the built-in classifier. (string) (Optional)
+- msg.params["owners"] : A comma-separated list with the value(s) "IBM" and/or "me" to specify which classifiers to run. (string) (Optional)
+- msg.params["threshold"] : A floating value (in string format) that specifies the minimum score a class must have to be displayed in the response (Optional)
+- msg.params["accept_language"] : Specifies the language of the output class names. Can be 'en' (English as default), 'es' (Spanish), 'ar' (Arabic) or 'ja' (Japanese). Classes for which no translation is available are omitted. If specified, it overrides the language specified in the node configuration (Optional)
+
+
+15. To start, we will create a new page in the Node-RED UI. Click on + near the info tab, to create a new page. It will create a Flow 2 tab with an empty canvas
+
+ <img src="./images/nodered8.png"/>
+
+16. Insert on the canvas a **inject** node, a **change** node, a **visual recognition** node and a **debug** node like the following diagram
+
+ <img src="./images/nodered9.png"/>
+
+17. Configure the **visual recognition** node and the **debug** node the same way than for the Flow1.
+
+18. With the change node, set msg.params["classifier_ids"] to your own classifier id (copied from Watson Studio):
+
+ <img src="./images/classifier_id.png"/>
+
+  <img src="./images/nodered10.png"/>
+
+19. Click Done.
+20. In the **inject** node, add a "Good Pizza" url : http://www.delonghi.com/Global/recipes/multifry/pizza_fresca.jpg (change the name of the node for better understanding of the flow)
+
+  <img src="./images/good_pizza.jpg"/>
+21. Add another **inject** node, add a "Bad Pizza" ur : http://aws-cf.imdoc.fr/prod/photos/3/8/1/10732381/23441387/img-23441387c2a.jpg (change the name of the node for better understanding of the flow)
+
+  <img src="./images/badpizza.jpg"/>
+
+22. Wire the nodes together and Deploy (red button up and right). You can now test the two inputs:
+
+  <img src="./images/nodered11.png"/>
+
+  ** Challenge: Create a flow with multiple Visual Recognition models**
+
+Usually, classification if a multistep process. First you use a generic classification model. If the generic classifier identify something of interest, then you can apply a specific classifier.
+
+In this step, you will have to create your own flow. This flow will first check if there is a pizza on the picture. If yes, it will check if the pizza is in good condition or not.
+
+Before starting, it is better to click on + near the info tab, to create a new page, and start in Flow 3 empty canvas.
+
+Hint :
+- You probably need to use a function node to evaluate the result of the generic classifier.
+- You need to use the **generic** model first and then your custom one!
+
+Here is a sample of code configuration for such a node :
+
+  <img src="./images/nodered12.png"/>
