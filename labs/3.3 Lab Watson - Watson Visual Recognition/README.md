@@ -152,12 +152,14 @@ The use cases expand beyond car damage to:
 - Detecting logos in images
 
 To make this work we use a deep convolutional neural network which has been pre-trained on millions of examples. Transfer learning and data augmentation make it possible to train a great model without spending countless hours annotating thousands of training images.
+
 1. Back to your available model list, clcik on **Create Model** on the Detect Objects tile.
+
    <img src="./images/detect-object-tile.png"/>
 
 2. Rename the collection "Pikachu-collection"
 
-3. Drag and drop the **pikachu-collection** zip file [Lab3 - Pikachu Collection](https://github.com/cllebrun/cllebrun.github.io/tree/master/labs/3.3%20Lab%20Watson%20-%20Watson%20Visual%20Recognition/Lab3%20-%20Collection)
+3. Drag and drop the **pikachu-collection** from [Lab3 - Pikachu Collection](https://github.com/cllebrun/cllebrun.github.io/tree/master/labs/3.3%20Lab%20Watson%20-%20Watson%20Visual%20Recognition/Lab3%20-%20Collection)
 
 4. Select an image and draw a box around Pikachu objects. Add the "pikachu" label, save, and repeat until you’re ready for the next image!
       <img src="./images/train-collection.png"/>
