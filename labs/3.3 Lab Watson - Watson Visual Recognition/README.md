@@ -139,8 +139,46 @@ Now that Watson has been trained on your specific images, let's test it out usin
 
 # Step 3 - Creating an object detection model
 
-1. Back to your available model list, clcik on **Create Model** on the Detect Objects tile.
+Up until now, clients have been using Watson to understand the contents of their images by training Watson with tagged images. For instance, detecting whether a car does or does not have damage.
 
+Today, our Custom Object Detection feature allows clients to train Watson by labeling specific objects, and training Watson to identify those objects in other images as well. For instance, clients can train Watson to determine the type of vehicle damage inside an image, including the location of the damage and the relative size of the damage. This results in more refined accuracy of the data overall, which helps to predict future outcomes, including estimated cost of repair from the vehicle damage.
+
+The use cases expand beyond car damage to:
+
+- Counting vehicles in a traffic jam
+- Identifying unattended shopping carts in a parking lot
+- Checking for patterns in CT or MRI scans
+- Locating specific objects on a store shelf
+- Detecting logos in images
+
+To make this work we use a deep convolutional neural network which has been pre-trained on millions of examples. Transfer learning and data augmentation make it possible to train a great model without spending countless hours annotating thousands of training images.
+1. Back to your available model list, clcik on **Create Model** on the Detect Objects tile.
+   <img src="./images/detect-object-tile.png"/>
+
+2. Rename the collection "Pikachu-collection"
+
+3. Drag and drop the **pikachu-collection** zip file [Lab3 - Pikachu Collection](https://github.com/cllebrun/cllebrun.github.io/tree/master/labs/3.3%20Lab%20Watson%20-%20Watson%20Visual%20Recognition/Lab3%20-%20Collection)
+
+4. Select an image and draw a box around Pikachu objects. Add the "pikachu" label, save, and repeat until you’re ready for the next image!
+      <img src="./images/train-collection.png"/>
+
+5. Click Done. Click to **View all images**
+
+6. Once you’ve labeled several images you can train and test your machine learning model. Click on the **Train Model** button.
+    <img src="./images/train-model.png"/>
+
+7. Once the training is done, you can test new images. CLick on the "Pikachu-collection" link and on the **Test** tab.
+      <img src="./images/test-tab.png"/>
+
+8. Drag and drop the test images from [Lab3 - Test Images](https://github.com/cllebrun/cllebrun.github.io/tree/master/labs/3.3%20Lab%20Watson%20-%20Watson%20Visual%20Recognition/Lab3%20-%20Test%20Images)
+<img src="./images/results-test.png"/>
+
+Let's analyze the results. Note that we have train the model only with one object to detect so it can get confused with very similar objects as we did not train it to make that specific difference.
+Also we probably should have train the model with images representing not only pikachus but pikachus with other guys. Like for the Custom Visual Recognition model, the training set and the testing set have to be similar.
+
+At this point, you may have more images to label to improve your model’s accuracy, this is where the Auto Label feature will help you label data to train faster. If you wanted to do that, simply go to an image without labels, and click Auto Label to get Watson’s suggested labels.
+
+Get started with Custom Object Detection to enhance your existing applications to more efficiently and effectively analyze visual content to drive productivity inside your organization.
 # Step 4 - Integrate Visual Recognition in your application with Node-Red
 
 **Introduction**
