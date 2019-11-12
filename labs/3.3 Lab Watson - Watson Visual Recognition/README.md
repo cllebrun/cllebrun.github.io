@@ -31,7 +31,8 @@ In the following lab, you will learn:
 
 1. Using Visual Recognition pre-trained models with the UI
 2. Creating a custom classifier with the UI
-3. Integrate Visual Recognition in your application with Node-Red
+3. Creating an object detection model
+4. Integrate Visual Recognition in your application with Node-Red
 
 # Step 1 - Using Visual Recognition pre-trained models with the UI
 
@@ -45,7 +46,7 @@ The first part of this lab will show you how to create a Visual Recognition Serv
 
 3. Then click the **Watson Studio** tile, then choose a name for your service (e.g. Watson Studio-pizza), in the **DALLAS** region, then click the Create button.
 
- <img src="./images/studio-service.png"/>
+ <img src="./images/studio-service-create.png"/>
 Watson Studio is the tool for building AI models in a collaborative fashion so you can provide a more democratic training process that reduces AI biases.
 
 4. Click the Get Started button to open Watson Studio.
@@ -53,16 +54,22 @@ Watson Studio is the tool for building AI models in a collaborative fashion so y
 
 6. Click **Create a project**.
    <img src="./images/create-project.png"/>
-7. Select **Visual Recognition** type of project.
-   <img src="./images/vr-project.png"/>
 
-8. Select the **US South** region.
-   <img src="./images/vr-region.png"/>
+7. Create an **empty project**.
+   <img src="./images/empty-project.png"/>
 
-9. Enter a name for your project (e.g. My Pizza Quality Check) and a description if you like then click the **Create** button. This project will create a Watson Visual Recognition service and the needed Cloud Object Storage.
-   <img src="./images/pizza-check.png"/>
+8. Enter a name for your project (e.g. My Pizza Quality Check) and a description if you like then click the **Create** button. This project will create the needed Cloud Object Storage.
+   <img src="./images/pizza-check2.png"/>
+9. On the top right, click on **+ Add to project**   
+   <img src="./images/add-project.png"/>
 
+   And select **Visual Recognition** as asset type.
+10. You need to provision a Visual Recognition service, click on the link to do it.
+   <img src="./images/link-vr.png"/>
 
+   Create the service and make sure to chose the **DALLAS region**
+
+   <img src="./images/confirm-creation.png"/>
 
    Great! You have created a new machine learning project that you can collaborate on with others, upload data-sets, and create training models. Additionally, this project wizard has instantiated the Watson Visual Recognition service that is pre-trained on millions of consumer oriented images and can be used with no additional training (as we'll see below).
 
@@ -70,15 +77,10 @@ Watson Studio is the tool for building AI models in a collaborative fashion so y
 
 **Test the General model:**
 
-Before creating a custom model, let's check out the General model and the Food model that IBM has already trained on millions of images.
-
-10. Click the **watson-visual-combined-dsx** link for the Watson Visual Recognition service that was automatically created for you.
-   <img src="./images/default-model.png"/>
-
-
+Before creating a custom model, let's check out the General model that IBM has already trained on millions of images.
 
 11. Click the Test button of the General model panel.
-
+   <img src="./images/all-models.png"/>
 12. Click the Test tab of this model to upload an unlabeled image that Watson will examine to determine what insights can be gleaned from Watson's training of millions of images.
   <img src="./images/test-general.png"/>
 
@@ -86,19 +88,6 @@ Before creating a custom model, let's check out the General model and the Food m
   <img src="./images/test-general-images.png"/>
 
 Notice it displays the confidence score (which is the statistical probability of this classification against other classifiers in this model).
-
-**Test the Face model:**
-
-Now let's explore the Faces model.
-
-14. Click the watson-vision-combined-dsx link to return to the model choices.
-
-15. Click the Test button of the Faces model.
-
-16. Click the Test tab of this model then drag images from [Test images folder](https://github.com/cllebrun/cllebrun.github.io/tree/master/labs/3.3%20Lab%20Watson%20-%20Watson%20Visual%20Recognition/Lab1%20-%20Test%20Images) on the canvas.
-
-<img src="./images/test-faces-images.png"/>
-As you can see, the Faces model not only detect the number of persons, but also the gender and an estimate of the age. It also locates the position of each faces on the picture.
 
 Out of the box, Watson can tell you what kind of objects are in a photo even though these are your private photos that have not been indexed by a search engine nor contain labeled tags that tell Watson what the photo is about -- instead Watson can deduce this by comparing your photo against the millions of labeled photos that Watson has been trained on.
 
@@ -114,7 +103,8 @@ The Visual Recognition service is trained by providing example images for each c
 
 **Train your custom model:**
 
-1. Once again click the **watson_vision_combined-dsx** service link to return to the model choices.
+1. Click on the **watson visual recognition name** service link to return to the model choices.
+  <img src="./images/vr-name.png"/>
 
 2. Click on the **Create Model** button on the Classify Images tile.
   <img src="./images/classify-images.png"/>
@@ -122,13 +112,13 @@ The Visual Recognition service is trained by providing example images for each c
 3. Rename your model "Default Custom Model" by "PizzaConditionModel"
 
 4. You will now load images create your model classes. The pane to manage file upload is shown on the right side of your screen.
-Click the Browse button to upload a zip file containing at least 10 photos (.jpg or .png) for good pizzas, at least 10 photos for bad pizzas, and 10 photos for not-pizzas. You can also drag and drop from your file explorer good_pizza_images.zip, bad_pizza_images.zip and not_pizza_images.zip in the [Lab 2 - Training Set folder](https://github.com/cllebrun/cllebrun.github.io/tree/master/labs/3.3%20Lab%20Watson%20-%20Watson%20Visual%20Recognition/Lab2%20-%20Training%20Set).
+Click the Browse button to upload a zip file containing at least 10 photos (.jpg or .png) for good pizzas, at least 10 photos for bad pizzas, and 10 photos for not-pizzas. You can also drag and drop from your file explorer good_pizza_images.zip and bad_pizza_images.zip  in the [Lab 2 - Training Set folder](https://github.com/cllebrun/cllebrun.github.io/tree/master/labs/3.3%20Lab%20Watson%20-%20Watson%20Visual%20Recognition/Lab2%20-%20Training%20Set).
 
-  <img src="./images/upload-jpeg.png"/>
+  <img src="./images/upload-images.png"/>
 
-5. Create 2 classes by clicking on the + sign : GoodConditionPizza and BadConditionPizza
-6. Then drag the "good_pizza_images.zip" data set from the right of the screen to the GoodConditionPizza class card. Upon completion you will see image thumbnails for the class displayed in the tile. Then drag and drop the "bad_pizza_images.zip" data set to the BadConditionPizza class card. Drop the "not_pizza_images.zip" data set classifier to the Negative (recommended) card to specify images which are not from the defined classes.
-  <img src="./images/classes-pizzas.png"/>
+5. Rename the 2 classes created automatically : GoodConditionPizza and BadConditionPizza
+6. Then open the Negative class. Browse and drag and drop the "not_pizza_images.zip" data set from the right of the screen to the class. Upon completion you will see image thumbnails for the class displayed in the tile.
+
 
 7. Your model is ready to train, you can now click on the "Train Model" button and for your model to be trained. Even though it might seem like Watson is taking a long time, Watson set a world record for the fastest training of 7.5 million images in 7 hours versus the previous record taking 10 days (i.e. 34 times faster): http://fortune.com/2017/08/08/ibm-deep-learning-breakthrough/
 
@@ -138,7 +128,7 @@ This is really powerful! You can train Watson so it recognizes what you want, ev
 
 Now that Watson has been trained on your specific images, let's test it out using the toolkit.
 
-8. Click the watson_vision_combined-dsx link to return to the Visual Recognition service and scroll down until you see your newly trained PizzaConditionModel model.
+8. Click the Watson Visual Recognition service name link to return to the Visual Recognition service and scroll down until you see your newly trained PizzaConditionModel model.
 9. Click the Test button, which will take you to your Overview tab showing you information about this model.
 
   <img src="./images/test-custom.png"/>
@@ -147,7 +137,11 @@ Now that Watson has been trained on your specific images, let's test it out usin
 
     <img src="./images/images-test-custom.png"/>
 
-# Step 3 - Integrate Visual Recognition in your application with Node-Red
+# Step 3 - Creating an object detection model
+
+1. Back to your available model list, clcik on **Create Model** on the Detect Objects tile.
+
+# Step 4 - Integrate Visual Recognition in your application with Node-Red
 
 **Introduction**
 
