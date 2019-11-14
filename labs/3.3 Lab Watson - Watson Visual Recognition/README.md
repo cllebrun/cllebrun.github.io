@@ -161,26 +161,26 @@ To make this work we use a deep convolutional neural network which has been pre-
 
 3. Drag and drop the **pikachu-collection** from [Lab3 - Pikachu Collection](https://github.com/cllebrun/cllebrun.github.io/tree/master/labs/3.3%20Lab%20Watson%20-%20Watson%20Visual%20Recognition/Lab3%20-%20Collection)
 
-4. Select an image and draw a box around Pikachu objects. Add the "pikachu" label, save, and repeat until you’re ready for the next image!
+4. Select an image and draw a box around Pikachu objects. Add the "pikachu" label. A "oterpokemon" label when it is a pokemon but not a pikachu. Save, and repeat until you’re ready for the next image!
       <img src="./images/train-collection.png"/>
+      <img src="./images/2lables.png"/>
 
 5. Click Done. Click to **View all images**
 
 6. Once you’ve labeled several images you can train and test your machine learning model. Click on the **Train Model** button.
     <img src="./images/train-model.png"/>
 
-7. Once the training is done, you can test new images. CLick on the "Pikachu-collection" link and on the **Test** tab.
+7. Once the training is done, you can test new images. Click on the "Pikachu-collection" link and on the **Test** tab.
       <img src="./images/test-tab.png"/>
 
 8. Drag and drop the test images from [Lab3 - Test Images](https://github.com/cllebrun/cllebrun.github.io/tree/master/labs/3.3%20Lab%20Watson%20-%20Watson%20Visual%20Recognition/Lab3%20-%20Test%20Images)
 <img src="./images/results-test.png"/>
 
-Let's analyze the results. Note that we have train the model only with one object to detect so it can get confused with very similar objects as we did not train it to make that specific difference.
-Also we probably should have train the model with images representing not only pikachus but pikachus with other guys. Like for the Custom Visual Recognition model, the training set and the testing set have to be similar.
 
 At this point, you may have more images to label to improve your model’s accuracy, this is where the Auto Label feature will help you label data to train faster. If you wanted to do that, simply go to an image without labels, and click Auto Label to get Watson’s suggested labels.
 
 Get started with Custom Object Detection to enhance your existing applications to more efficiently and effectively analyze visual content to drive productivity inside your organization.
+
 # Step 4 - Integrate Visual Recognition in your application with Node-Red
 
 **Introduction**
