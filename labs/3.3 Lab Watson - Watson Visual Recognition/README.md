@@ -161,7 +161,7 @@ To make this work we use a deep convolutional neural network which has been pre-
 
 3. Drag and drop the **pikachu-collection** from [Lab3 - Pikachu Collection](https://github.com/cllebrun/cllebrun.github.io/tree/master/labs/3.3%20Lab%20Watson%20-%20Watson%20Visual%20Recognition/Lab3%20-%20Collection)
 
-4. Select an image and draw a box around Pikachu objects. Add the "pikachu" label. A "oterpokemon" label when it is a pokemon but not a pikachu. Save, and repeat until you’re ready for the next image!
+4. Select an image and draw a box around Pikachu objects. Add the "pikachu" label. A "otherpokemon" label when it is a pokemon but not a pikachu. Save, and repeat until you’re ready for the next image!
       <img src="./images/train-collection.png"/>
       <img src="./images/2lables.png"/>
 
@@ -222,7 +222,7 @@ Nodes are blocks that represent components of a larger system, in Node-RED's cas
 You can find these credentials from Visual Recognition Service created in Step 1:
 
 - go to https://dataplatform.ibm.com/data/services?target=watson
-- click on you visual recognition instance (watson-vision-combined-dsx)
+- click on your visual recognition instance
 - click on Credentials tab and View credentials
 - copy the apikey value
 
