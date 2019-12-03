@@ -1,6 +1,6 @@
 ![](./images/icon.png)
 
-# 2.2 Lab Watson - Introduction to IBM Natural Language Understanding
+# 3.1 Lab Watson - Introduction to IBM Natural Language Understanding
 
 With Natural Language Understanding, developers can analyze semantic features of text input, including categories, concepts, emotion, entities, keywords, metadata, relations, semantic roles, and sentiment.
 

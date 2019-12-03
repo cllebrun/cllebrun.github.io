@@ -1,5 +1,5 @@
 
-# 3.4 Lab Android - Watson Assistant
+# 3.6 Lab Android - Watson Assistant
 
 
 <img src="./images/cloud.png" width="20%"/>

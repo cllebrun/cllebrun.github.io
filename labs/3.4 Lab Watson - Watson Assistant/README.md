@@ -1,6 +1,6 @@
 ![](./images/conversation_icon_64x64.png)
 
-# 3.1 Lab Watson - Watson Assistant - Introduction
+# 3.4 Lab Watson - Watson Assistant - Introduction
 
 With the Watson Assistant service you can create virtual agents and bots that combine machine learning, natural language understanding, and integrated dialog tools to provide automated customer engagements.
 

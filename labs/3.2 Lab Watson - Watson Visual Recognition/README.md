@@ -1,6 +1,6 @@
 <img src="./images/VisualRecognition.png" width="20%"/>
 
-# 3.3 Lab Watson - Watson Visual Recognition - Introduction
+# 3.2 Lab Watson - Watson Visual Recognition - Introduction
 
 Watson Visual Recognition understands an image’s content out-of-the-box. The pre-trained models enable you to analyze images for objects, faces, colors, food, explicit content and other subjects for insights into your visual content.
 
