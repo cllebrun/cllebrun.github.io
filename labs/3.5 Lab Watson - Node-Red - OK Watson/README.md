@@ -14,7 +14,7 @@ In the following lab, you will learn:
 
 # Pre-Requisites
 
-+ Get an [IBM Cloud Platform account](https://console.bluemix.net/registration/), or use an existing account.
++ Get an IBM Cloud Platform account in the US region (https://cllebrun.github.io/labs/0_Registration/), or use an existing account.
 
 
 # Steps
