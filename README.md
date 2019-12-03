@@ -14,13 +14,16 @@ Getting Started with the IBM Cloud Platform !
 
 + [2.1 Lab Node.js - Developer tool: Toolchain](./labs/2.1%20Lab%20Node.js%20-%20Developer%20tool:%20Toolchain)
 
-+ [3.1 Lab Watson - Watson Assistant](./labs/3.1%20Lab%20Watson%20-%20Watson%20Assistant)
++ [3.1 Lab Watson - Natural Language Understanding](./labs/3.1%20Lab%20Watson%20-%20Natural%20Language%20Understanding)
 
-+ [3.2 Lab Watson - Node-Red - OK Watson](./labs/3.2%20Lab%20Watson%20-%20Node-Red%20-%20OK%20Watson)
++ [3.2 Lab Watson - Watson Visual Recognition](./labs/3.2%20Lab%20Watson%20-%20Watson%20Visual%20Recognition)
 
-+ [3.3 Lab Watson - Watson Visual Recognition](./labs/3.3%20Lab%20Watson%20-%20Watson%20Visual%20Recognition)
++ [3.4 Lab Watson - Watson Assistant](./labs/3.4%20Lab%20Watson%20-%20Watson%20Assistant)
 
-+ [3.4 Lab Android - Watson Assistant](./labs/3.4%20Lab%20Android%20-%20Watson%20Assistant)
++ [3.5 Lab Watson - Node-Red - OK Watson](./labs/3.5%20Lab%20Watson%20-%20Node-Red%20-%20OK%20Watson)
+
+
++ [3.6 Lab Android - Watson Assistant](./labs/3.6%20Lab%20Android%20-%20Watson%20Assistant)
 
 + [4.1 Lab IoT - Simulator - Node-RED](./labs/4.1%20Lab%20IoT%20-%20Simulator%20-%20Node-RED)
 
