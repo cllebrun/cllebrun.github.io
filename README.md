@@ -18,7 +18,7 @@ Getting Started with the IBM Cloud Platform !
 
 + [3.2 Lab Watson - Watson Visual Recognition](./labs/3.2%20Lab%20Watson%20-%20Watson%20Visual%20Recognition)
 
-+ [3.3 Lab Watson - Personality Insights and Tone Analyzer](./labs/3.2%20Lab%20Watson%20-%20Personality%20Insights%20and%20Tone%20Analyzer)
++ [3.3 Lab Watson - Personality Insights and Tone Analyzer](./labs/3.3%20Lab%20Watson%20-%20Personality%20Insights%20and%20Tone%20Analyzer)
 
 + [3.4 Lab Watson - Watson Assistant](./labs/3.4%20Lab%20Watson%20-%20Watson%20Assistant)
 
