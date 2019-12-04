@@ -298,7 +298,7 @@ We will use the **Change** node to define some part of the msg object that will 
 20. In the **inject** node, add a "Good Pizza" url : http://www.delonghi.com/Global/recipes/multifry/pizza_fresca.jpg (change the name of the node for better understanding of the flow)
 
   <img src="./images/good_pizza.jpg"/>
-21. Add another **inject** node, add a "Bad Pizza" ur : http://aws-cf.imdoc.fr/prod/photos/3/8/1/10732381/23441387/img-23441387c2a.jpg (change the name of the node for better understanding of the flow)
+21. Add another **inject** node, add a "Bad Pizza" url : http://aws-cf.imdoc.fr/prod/photos/3/8/1/10732381/23441387/img-23441387c2a.jpg (change the name of the node for better understanding of the flow)
 
   <img src="./images/badpizza.jpg"/>
 

@@ -121,8 +121,13 @@ You will then access Tone Analyzer quick demos so as to understand the Tone Anal
   d.  Modify {path_to_file} to specify the location of the profile.txt file.
 
   **Linux version of the command:**
+
   ```
-   curl -X POST -u "apikey:{apikey}" \--header "Content-Type: text/plain;charset=utf-8" \--header "Accept: application/json" \--data-binary @{path_to_file}profile.txt \"{url}/v3/profile?version=2017-10-13"
+  curl -X POST -u "apikey:{apikey}" \
+  --header "Content-Type: text/plain;charset=utf-8" \
+  --header "Accept: application/json" \
+  --data-binary @{path_to_file}profile.txt \
+  "{url}/v3/profile?version=2017-10-13"
    ```
 
    **Windows version of the command:**
@@ -141,7 +146,12 @@ You will then access Tone Analyzer quick demos so as to understand the Tone Anal
   **Linux version of the command:**
 
   ```
-  curl -X POST -u "apikey:{apikey}"\--header "Content-Type: application/json"\--header "Accept: application/json"\--data-binary @{path_to_file}profile.json \"{url}/v3/profile?version=2017-10-13&consumption_preferences=true&raw_scores=true"
+    curl -X POST -u "apikey:{apikey}" \
+  --header "Content-Type: application/json" \
+  --header "Accept: application/json" \
+  --data-binary @{path_to_file}profile.json \
+  "{url}/v3/profile?version=2017-10-13&consumption_preferences=true&raw_scores=true"
+
   ```
 
   **Windows version of the command:**
@@ -163,7 +173,13 @@ You will then access Tone Analyzer quick demos so as to understand the Tone Anal
   **Linux version of the command:**
 
   ```
-    curl -X POST -u "apikey:{apikey}"\--header "Content-Type: application/json"\--header "Accept: text/csv"\--data-binary @{path_to_file}profile.json \--output profile.csv \"{url}/v3/profile?version=2017-10-13&consumption_preferences=true&raw_scores=true&csv_headers=true"
+    curl -X POST -u "apikey:{apikey}" \
+  --header "Content-Type: application/json" \
+  --header "Accept: text/csv" \
+  --data-binary @{path_to_file}profile.json \
+  --output profile.csv \
+  "{url}/v3/profile?version=2017-10-13&consumption_preferences=true&raw_scores=true&csv_headers=true"
+
     ```
     **Windows version of the command :**
     ```
