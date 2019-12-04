@@ -108,17 +108,17 @@ You will then access Tone Analyzer quick demos so as to understand the Tone Anal
   **Send plain text input and receive basic JSON output**
 
   This first example passes the plain text file profile.txt to the POST /v3/profile method and requests a JSON response.
-1.  Download the sample file profile.txt
+1.  Download the sample file [profile.txt](https://raw.githubusercontent.com/cllebrun/cllebrun.github.io/master/labs/3.3%20Lab%20Watson%20-%20Personality%20Insights%20and%20Tone%20Analyzer/profile.txt)
 
 1.  Issue the following command to send the file to the /v3/profile method and request a JSON response.
 
   a.  The Content-Type header specifies that the input is plain text, text/plain. The charset parameter included with the header identifies the character encoding of the input text.
 
-  b.  The Accept header specifies application/jsonto indicate that JSON output is requested.
+  b.  The Accept header specifies application/json to indicate that JSON output is requested.
 
   c.  Replace {apikey} and {url} with your information.
 
-  d.  Modify {path_to_file} to specify the location of the profile.txtfile.
+  d.  Modify {path_to_file} to specify the location of the profile.txt file.
 
   **Linux version of the command:**
   ```
@@ -135,7 +135,7 @@ You will then access Tone Analyzer quick demos so as to understand the Tone Anal
 
    In this example, a JSON file is passed to the /v3/profile method, again requesting a JSON response. The example requests consumption preferences and raw scores for a more detailed analysis of the input.
 
-1. Download the sample file profile.json. This file contains a collection of Twitter messages.
+1. Download the sample file [profile.json](https://raw.githubusercontent.com/cllebrun/cllebrun.github.io/master/labs/3.3%20Lab%20Watson%20-%20Personality%20Insights%20and%20Tone%20Analyzer/profile.json) This file contains a collection of Twitter messages.
 1.  Issue the following command to send the file to the /v3/profile method. The example specifies application/json for the Content-Typeand Accept headers; the charset parameter is not needed for JSON input. The example sets the consumption_preferencesand raw_scoresquery parameters to true.
 
   **Linux version of the command:**
@@ -245,7 +245,16 @@ There is an analysis at the document level and an analysis at the sentence level
 1.  You can visualize the response by clicking on the Debug console.
 1.  You can see the output of the Tone Analyzer service in the response object.
 
-  <img src="./images/debugnodered.png"/>
+  <img src="./images/debug-nodered.png"/>
+
+The service returns a JSON object that always contains a document_tonefield. This field contains an object that provides the analysis of the full input document. It contains a single field, tones, that provides the results of the analysis for each qualifying tone of the document.
+
+If the sentences parameter of the request is omitted or set to true, the response also includes a sentences_tonefield. This field contains an array of objects, each of which provides the following information for a different sentence from the input content:
+- sentence_id(integer) provides the unique identifier for the sentence. The first sentence has ID 0, and the ID of each subsequent sentence is incremented by one.
+- text(string) provides the text of the sentence.
+- tones provides the results of the analysis for each qualifying tone of the sentence.
+
+Feel free to test your own text by modifying the payload message in the inject node.
 
 # Resources
 
