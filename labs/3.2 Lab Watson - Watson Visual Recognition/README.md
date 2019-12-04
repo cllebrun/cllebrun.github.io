@@ -84,7 +84,7 @@ Before creating a custom model, let's check out the General model that IBM has a
 12. Click the Test tab of this model to upload an unlabeled image that Watson will examine to determine what insights can be gleaned from Watson's training of millions of images.
   <img src="./images/test-general.png"/>
 
-13. Locate your favorite image search tool to find test images, use your personal images or drag images from [Test images folder](https://github.com/cllebrun/cllebrun.github.io/tree/master/labs/3.3%20Lab%20Watson%20-%20Watson%20Visual%20Recognition/Lab1%20-%20Test%20Images)
+13. Locate your favorite image search tool to find test images, use your personal images or drag images from [Test images folder](https://github.com/cllebrun/cllebrun.github.io/tree/master/labs/3.2%20Lab%20Watson%20-%20Watson%20Visual%20Recognition/Lab1%20-%20Test%20Images)
   <img src="./images/test-general-images.png"/>
 
 Notice it displays the confidence score (which is the statistical probability of this classification against other classifiers in this model).
@@ -112,7 +112,7 @@ The Visual Recognition service is trained by providing example images for each c
 3. Rename your model "Default Custom Model" by "PizzaConditionModel"
 
 4. You will now load images create your model classes. The pane to manage file upload is shown on the right side of your screen.
-Click the Browse button to upload a zip file containing at least 10 photos (.jpg or .png) for good pizzas, at least 10 photos for bad pizzas, and 10 photos for not-pizzas. You can also drag and drop from your file explorer good_pizza_images.zip and bad_pizza_images.zip  in the [Lab 2 - Training Set folder](https://github.com/cllebrun/cllebrun.github.io/tree/master/labs/3.3%20Lab%20Watson%20-%20Watson%20Visual%20Recognition/Lab2%20-%20Training%20Set).
+Click the Browse button to upload a zip file containing at least 10 photos (.jpg or .png) for good pizzas, at least 10 photos for bad pizzas, and 10 photos for not-pizzas. You can also drag and drop from your file explorer good_pizza_images.zip and bad_pizza_images.zip  in the [Lab 2 - Training Set folder](https://github.com/cllebrun/cllebrun.github.io/tree/master/labs/3.2%20Lab%20Watson%20-%20Watson%20Visual%20Recognition/Lab2%20-%20Training%20Set).
 
   <img src="./images/upload-images.png"/>
 
@@ -133,7 +133,7 @@ Now that Watson has been trained on your specific images, let's test it out usin
 
   <img src="./images/test-custom.png"/>
 
-10. Click the Test tab and drop some pizza images onto the canvas to see how your custom model performs. Tip: you'll find a folder named [Lab 2 - Test images](https://github.com/cllebrun/cllebrun.github.io/tree/master/labs/3.3%20Lab%20Watson%20-%20Watson%20Visual%20Recognition/Lab2%20-%20Test%20images) that contains some test images you can use; or find some from your favorite search engine.
+10. Click the Test tab and drop some pizza images onto the canvas to see how your custom model performs. Tip: you'll find a folder named [Lab 2 - Test images](https://github.com/cllebrun/cllebrun.github.io/tree/master/labs/3.2%20Lab%20Watson%20-%20Watson%20Visual%20Recognition/Lab2%20-%20Test%20images) that contains some test images you can use; or find some from your favorite search engine.
 
     <img src="./images/images-test-custom.png"/>
 
@@ -159,7 +159,7 @@ To make this work we use a deep convolutional neural network which has been pre-
 
 2. Rename the collection "Pikachu-collection"
 
-3. Drag and drop the **pikachu-collection** from [Lab3 - Pikachu Collection](https://github.com/cllebrun/cllebrun.github.io/tree/master/labs/3.3%20Lab%20Watson%20-%20Watson%20Visual%20Recognition/Lab3%20-%20Collection)
+3. Drag and drop the **pikachu-collection** from [Lab3 - Pikachu Collection](https://github.com/cllebrun/cllebrun.github.io/tree/master/labs/3.2%20Lab%20Watson%20-%20Watson%20Visual%20Recognition/Lab3%20-%20Collection)
 
 4. Select an image and draw a box around Pikachu objects. Add the "pikachu" label. A "otherpokemon" label when it is a pokemon but not a pikachu. Save, and repeat until you’re ready for the next image!
       <img src="./images/train-collection.png"/>
@@ -173,7 +173,7 @@ To make this work we use a deep convolutional neural network which has been pre-
 7. Once the training is done, you can test new images. Click on the "Pikachu-collection" link and on the **Test** tab.
       <img src="./images/test-tab.png"/>
 
-8. Drag and drop the test images from [Lab3 - Test Images](https://github.com/cllebrun/cllebrun.github.io/tree/master/labs/3.3%20Lab%20Watson%20-%20Watson%20Visual%20Recognition/Lab3%20-%20Test%20Images)
+8. Drag and drop the test images from [Lab3 - Test Images](https://github.com/cllebrun/cllebrun.github.io/tree/master/labs/3.2%20Lab%20Watson%20-%20Watson%20Visual%20Recognition/Lab3%20-%20Test%20Images)
 <img src="./images/results-test.png"/>
 
 
