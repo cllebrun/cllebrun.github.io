@@ -1,4 +1,6 @@
-<img src="./images/VisualRecognition.png" width="20%"/>
+<img src="./images/logo-PI.png" width="20%"/>
+
+<img src="./images/logo-TA.png" width="20%"/>
 
 # 3.3 Lab Watson - Personality Insights and Tone Analyzer
 
@@ -25,6 +27,7 @@ You will then access Tone Analyzer quick demos so as to understand the Tone Anal
 
 1. Personality Insight Demo
 1. Personality Insight Service
+1. Tone Analyzer Demo
 1. Tone Analyzer Service
 
 
@@ -166,7 +169,83 @@ You will then access Tone Analyzer quick demos so as to understand the Tone Anal
     ```
     curl -X POST -u "apikey:{apikey}" --header "Content-Type: application/json" --header "Accept: text/csv" --data-binary "@{path_to_file}profile.json" --output profile.csv "{url}/v3/profile?version=2017-10-13&consumption_preferences=true&raw_scores=true&csv_headers=true"
     ```
-# Step 3 - Tone Analyzer Service
+# Step 3 - Tone Analyzer Demo
+
+
+1.  Access the Tone Analyzer General purpose quick demo at the following url: https://tone-analyzer-demo.ng.bluemix.net/
+
+   <img src="./images/TA-demo.png"/>
+
+1.  Select one of the example (Tweets, Online Review, Email message, Product Review in French or Your own text) and click on Analyze. You get the results of the analysis in the Output section.
+   <img src="./images/TA-output.png"/>
+
+  Here is a description of the different emotional and language tones:
+  - Anger: Anger is evoked due to injustice, conflict, humiliation, negligence, or betrayal. If anger is active, the individual attacks the target, verbally or physically. If anger is passive, the person silently sulks and feels tension and hostility. (An emotional tone.)
+  - Fear: Fear is a response to impending danger. It is a survival mechanism that is triggered as a reaction to some negative stimulus. Fear can be a mild caution oran extreme phobia. (An emotional tone.)
+  - Joy: Joy (or happiness) has shades of enjoyment, satisfaction, and pleasure. Joy brings a sense of well-being, inner peace, love, safety, and contentment. (An emotional tone.)
+  - Sadness:  Sadness  indicates  a  feeling of  loss  and  disadvantage.  When  a  person  is  quiet,  less energetic, and withdrawn, it can be inferred that they feel sadness. (An emotional tone.)
+  - Analytical: An analytical tone indicates a person's reasoning and analytical attitude about things. An  analytical  person  might  be  perceived  as  intellectual,  rational,  systematic,  emotionless,  or impersonal. (A language tone.)
+  - Confident: A confident tone indicates a person's degree of certainty. A confident person might be perceived as assured, collected, hopeful, or egotistical. (A language tone.)
+  - Tentative: A tentative tone indicates a person's degree of inhibition. A tentative person might be perceived as questionable, doubtful, or debatable. (A language tone.)
+
+There is an analysis at the document level and an analysis at the sentence level.
+
+# Step 4 - Tone Analyzer service
+
+1.  On the IBM Cloud console, navigate to the catalog and look for the **Tone Analyzer** service. Click on the service tile.
+
+  <img src="./images/TA-service.png"/>
+
+1. Choose the Dallas region, the Lite plan and click **Create**. The service instance is created, and the service dashboard page opens automatically.
+
+  <img src="./images/TA-creation.png"/>
+
+1.  On the Manage tab, click Show Credentials to view your credentials.
+1.  Copy the API Key and URL values.
+
+1. You will use Node-RED in the following steps. If you already have a running instance of Node-RED, you can use it and go to 6. . Otherwise, you need to follow the next steps:
+  - On the IBM Cloud dashboard, select Catalog from the menu bar.
+  - Enter Node-RED in Search the catalog.
+  - Click on Node-RED Starter.
+  - Give a name for the application, select the Default plan and click on Create.
+  - Wait for your application to start and then click on **Visit App URL**.
+  - Follow the instructions to secure your Node-RED application.
+  - Click on **Go to your Node-RED editor**
+
+1.  Open a new tab on your Node-RED editor.
+1.  Drag and drop the Tone Analyzer node on the workspace.
+    <img src="./images/node-red-service.png"/>
+1.  Double-click on the node to edit its properties. Provide the API Key, make sure the endpoint is the right one. Chose the method "General tone" and set "version_date" to "multiple tone".
+
+  <img src="./images/TA-nodered-properties.png"/>
+
+1.  Click on Done.
+1.  Drag and drop an inject node and a debug node from the palette.
+
+  <img src="./images/node-red1.png"/>
+
+1.  Wire the nodes together.
+
+  <img src="./images/flownode.png"/>
+
+1.  Double-click the timestamp node to edit its properties.
+1.  For the Payload select String and enter the sentences that you want to be analyzed. Here is an example that you can use: **“Team, I know that times are tough! Product sales have been disappointing for the past three quarters. We have a competitive product, but we need to do a better job of selling it!”**
+
+1.  Click on Done.
+1.  Double click the msg.payload node to edit its properties.
+1.  Replace the word **payload** by the word **response**.
+
+  <img src="./images/responsenode.png"/>
+
+1.  Click on Done.
+1.  Click on Deploy.
+1.  Open the debug tab on the right panel
+1.  Run the flow by clicking on the left of the inject node.
+1.  You should get a Successfully injected message.
+1.  You can visualize the response by clicking on the Debug console.
+1.  You can see the output of the Tone Analyzer service in the response object.
+
+  <img src="./images/debugnodered.png"/>
 
 # Resources
 
