@@ -195,7 +195,7 @@ function main(params) {
 }
 ```
 
-1.  Replace username, password and host with the values for the Weather service you saved earlier. Change the coordinates if you want. Save.
+1.  Replace username, password and host with the values provided by your instructor. Change the coordinates if you want. Save.
 
 1.  To test your action, click 'invoke'
 ![](./images/invoke.png)
