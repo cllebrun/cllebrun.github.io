@@ -44,7 +44,7 @@ You will then access Tone Analyzer quick demos so as to understand the Tone Anal
   - Text from several people (Barack Obama, Gandhi and Natsume Soseki) or your own text (more than 100 words)
   - Your own tweets and replies
 
-1.  For tweets and replies analysis, first select a twitter account and click on the Analyze button.
+1.  For tweets and replies analysis, first select a twitter account and   click on the Analyze button.
   You get the results of the analysis in the Output section.
   <img src="./images/output-demo.png"/>
 
@@ -80,14 +80,12 @@ You will then access Tone Analyzer quick demos so as to understand the Tone Anal
 
     The service computes the five basic human values that were proposed by Schwartz and that were validated in more than twenty countries (Schwartz, 1992).You can get an explanation of each characteristic simply by hovering over it.
 
-
-
-2.  Get a sunburst visualization by clicking on the “View personality traits in sunburst visualization” link.
+3.  Get a sunburst visualization by clicking on the “View personality traits in sunburst visualization” link.
 
   <img src="./images/chart-demo.png"/>
 
 
-3. Feel free to test with your own Twitter account !
+4. Feel free to test with your own Twitter account !
 
 # Step 2 - Personality Insight Service
 
@@ -97,7 +95,7 @@ You will then access Tone Analyzer quick demos so as to understand the Tone Anal
 
 1. Choose the Dallas region, the Lite plan and click **Create**. The service instance is created, and the service dashboard page opens automatically.
 
-  <img src="./images/PI-creation.png"/>
+    <img src="./images/PI-creation.png"/>
 
 1.  On the Personality Insights service dashboard page, click on Manage.
 1.  On the Manage tab, click Show Credentials to view your credentials.
@@ -182,7 +180,7 @@ You will then access Tone Analyzer quick demos so as to understand the Tone Anal
 
   ```
   **Windows version of the command :**
-  
+
   ```
     curl -X POST -u "apikey:{apikey}" --header "Content-Type: application/json" --header "Accept: text/csv" --data-binary "@{path_to_file}profile.json" --output profile.csv "{url}/v3/profile?version=2017-10-13&consumption_preferences=true&raw_scores=true&csv_headers=true"
   ```
