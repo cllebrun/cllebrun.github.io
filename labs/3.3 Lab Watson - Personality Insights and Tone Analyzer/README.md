@@ -181,7 +181,8 @@ You will then access Tone Analyzer quick demos so as to understand the Tone Anal
   "{url}/v3/profile?version=2017-10-13&consumption_preferences=true&raw_scores=true&csv_headers=true"
 
   ```
-    **Windows version of the command :**
+  **Windows version of the command :**
+  
   ```
     curl -X POST -u "apikey:{apikey}" --header "Content-Type: application/json" --header "Accept: text/csv" --data-binary "@{path_to_file}profile.json" --output profile.csv "{url}/v3/profile?version=2017-10-13&consumption_preferences=true&raw_scores=true&csv_headers=true"
   ```
