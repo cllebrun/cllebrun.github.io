@@ -1,6 +1,5 @@
-<img src="./images/logo-PI.png" width="20%"/>
+<img src="./images/logo-PI-TA.png" width="20%"/>
 
-<img src="./images/logo-TA.png" width="20%"/>
 
 # 3.3 Lab Watson - Personality Insights and Tone Analyzer
 
@@ -46,11 +45,11 @@ You will then access Tone Analyzer quick demos so as to understand the Tone Anal
 
 1.  For tweets and replies analysis, first select a twitter account and   click on the Analyze button.
   You get the results of the analysis in the Output section.
-  <img src="./images/output-demo.png"/>
+    <img src="./images/output-demo.png"/>
 
 
-  - First output is a summary of the personality.
-  - On the right, you can see the consumption preferences.
+    - First output is a summary of the personality.
+    - On the right, you can see the consumption preferences.
 
   The Personality Insights service infers consumption preferences based on the results of its personality profile for the author of the input text. From existing literature, IBM identified 104 consumption preferences that have proved to be correlated with personality. These include preferences that are related to shopping, movies, music, and other categories. IBM then created a psychometric survey to assess an individual's inclination for each consumption behavior.
 
