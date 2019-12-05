@@ -89,7 +89,6 @@ You will then access Tone Analyzer quick demos so as to understand the Tone Anal
 # Step 2 - Personality Insight Service
 
 1.  On the IBM Cloud console, navigate to the catalog and look for the **Personality Insights** service. Click on the service tile.
-
   <img src="./images/PI-service.png"/>
 
 1. Choose the Dallas region, the Lite plan and click **Create**. The service instance is created, and the service dashboard page opens automatically.
