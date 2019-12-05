@@ -79,17 +79,16 @@ You will then access Tone Analyzer quick demos so as to understand the Tone Anal
 
     The service computes the five basic human values that were proposed by Schwartz and that were validated in more than twenty countries (Schwartz, 1992).You can get an explanation of each characteristic simply by hovering over it.
 
-3.  Get a sunburst visualization by clicking on the “View personality traits in sunburst visualization” link.
+1.  Get a sunburst visualization by clicking on the “View personality traits in sunburst visualization” link.
+    <img src="./images/chart-demo.png"/>
 
-  <img src="./images/chart-demo.png"/>
 
-
-4. Feel free to test with your own Twitter account !
+1.  Feel free to test with your own Twitter account !
 
 # Step 2 - Personality Insight Service
 
 1.  On the IBM Cloud console, navigate to the catalog and look for the **Personality Insights** service. Click on the service tile.
-  <img src="./images/PI-service.png"/>
+    <img src="./images/PI-service.png"/>
 
 1. Choose the Dallas region, the Lite plan and click **Create**. The service instance is created, and the service dashboard page opens automatically.
 
