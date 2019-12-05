@@ -140,7 +140,7 @@ You will then access Tone Analyzer quick demos so as to understand the Tone Anal
 
    In this example, a JSON file is passed to the /v3/profile method, again requesting a JSON response. The example requests consumption preferences and raw scores for a more detailed analysis of the input.
 
-1. Download the sample file [profile.json](https://raw.githubusercontent.com/cllebrun/cllebrun.github.io/master/labs/3.3%20Lab%20Watson%20-%20Personality%20Insights%20and%20Tone%20Analyzer/profile.json) This file contains a collection of Twitter messages.
+1. Download the sample file <a href="https://github.com/cllebrun/cllebrun.github.io/blob/master/labs/3.3%20Lab%20Watson%20-%20Personality%20Insights%20and%20Tone%20Analyzer/profile.json" download="profile.json">profile.json</a> This file contains a collection of Twitter messages.
 1.  Issue the following command to send the file to the /v3/profile method. The example specifies application/json for the Content-Typeand Accept headers; the charset parameter is not needed for JSON input. The example sets the consumption_preferencesand raw_scoresquery parameters to true.
 
   **Linux version of the command:**
