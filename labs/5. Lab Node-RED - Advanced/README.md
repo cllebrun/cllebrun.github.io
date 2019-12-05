@@ -27,14 +27,10 @@ If you don't have any Node-RED app, please create an app in bluemix from the **N
 
 # Use The Weather Company Data service
 
-1. On your App on the IBM Cloud Platform, on the left menu click on **Connections** and click on **Connect New**
-Look for the **Weather Company Data** service in the catalog. 
+1. Get the Weather credentials provided by your instructor
 
   ![](./images/weather.png)
 
-Click Create and restage your app.
-
-1. Open your Node-RED app and drag and drop the Weather node, the inject node and the debug node. Wire them together
 
 1. Open the weather node and configure with Lat and Lng. You wimm keep the option **Daily Forecast (10 days)**
 
