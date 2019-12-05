@@ -108,7 +108,7 @@ You will then access Tone Analyzer quick demos so as to understand the Tone Anal
   **Send plain text input and receive basic JSON output**
 
   This first example passes the plain text file profile.txt to the POST /v3/profile method and requests a JSON response.
-1.  Download the sample file [profile.txt](https://raw.githubusercontent.com/cllebrun/cllebrun.github.io/master/labs/3.3%20Lab%20Watson%20-%20Personality%20Insights%20and%20Tone%20Analyzer/profile.txt)
+1.  Download the sample file <a href="https://raw.githubusercontent.com/cllebrun/cllebrun.github.io/master/labs/3.3%20Lab%20Watson%20-%20Personality%20Insights%20and%20Tone%20Analyzer/profile.txt" download="profile.txt">profile.txt</a>
 
 1.  Issue the following command to send the file to the /v3/profile method and request a JSON response.
 
