@@ -30,7 +30,7 @@ In the following lab, you will learn:
 
 
 
-# Step 1 - Call the API using curl
+# Step 1 - Create the service
 
 1. On the IBM Cloud Platform account dashboard, select **Catalog** from the menu bar.
 
@@ -44,7 +44,7 @@ In the following lab, you will learn:
 
 
 
-# Step 2 - API call using cURL
+# Step 2 - API call using curl
 
 On the main page of your service, in the **Manage** tab, you have access to an API Key and a URL. These are required to call the API.
 
