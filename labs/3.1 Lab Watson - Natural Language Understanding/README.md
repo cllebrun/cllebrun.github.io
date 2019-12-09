@@ -14,7 +14,7 @@ In the following lab, you will learn:
 
 
 + Test NLU using curl
-+ Integrate NLU
+
 
 
 # Pre-Requisites
