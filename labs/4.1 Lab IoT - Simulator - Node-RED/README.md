@@ -38,55 +38,29 @@ This way, we don't require an actual hardware device to test our application.
 
     ![IoT Quickstart](./images/iot-quickstart.png)
 
-1. Enter the device id. 
+1. Enter the device id.
 
-1. Vizualise the live sensor data and play with the dynamic graph. 
+1. Vizualise the live sensor data and play with the dynamic graph.
 
 
 # Connect your device to the Watson IoT Platform
 
 You've seen your data, what next? Now you will see how to use theses sensors data in an application created with the IBM Cloud Platform.
 
-1. Login to the [IBM Cloud Platform](http://console.bluemix.net/){:target="_blank"}.
+1. Open your Node-RED application
 
-1. Browse the catalog under the "Boilerplates" category
+1. Open a new tab
 
-    ![catalog](./images/catalog.png)
 
-1. Double click on the **Internet of Things Platform Starter** Boilerplate to create your own <br /> instance of this IoT starter application.
 
-    ![iotstarter](./images/boilerplate-iotstarter.png)
-
-1. Provide the application name, leave the same namefor the host, and click **Create**.
-<br /> *Note: Wait for a few minutes for your app to start running.*
-
-1. When your app is running (green status), select the app URL or type it into the browser to open the **Node-RED flow editor**
+1. Import the following flow:
 
     ```
-    https://<appname>.mybluemix.net
+    [{"id":"1bb9574b.5f4329","type":"ibmiot out","z":"e3fcda06.646918","authentication":"boundService","apiKey":"","outputType":"evt","deviceId":"temperatures","deviceType":"device1","eventCommandType":"update","format":"json","data":"temp:10","qos":"","name":"Send to IBM IoT Platform","service":"registered","x":690,"y":840,"wires":[]},{"id":"415bb36f.00529c","type":"inject","z":"e3fcda06.646918","name":"Send Data","topic":"","payload":"true","payloadType":"bool","repeat":"3","crontab":"","once":false,"onceDelay":"","x":130,"y":840,"wires":[["8f9b2118.9fdce"]]},{"id":"db314703.cbeb38","type":"debug","z":"e3fcda06.646918","name":"Debug output payload","active":false,"console":"false","complete":"payload","x":800,"y":900,"wires":[]},{"id":"a35c484d.923e38","type":"comment","z":"e3fcda06.646918","name":"2. Click to send data","info":"To automatically send data:\n1. Change *Repeat* to interval.\n2. Click Deploy button.\n","x":130,"y":880,"wires":[]},{"id":"8f9b2118.9fdce","type":"function","z":"e3fcda06.646918","name":"Device payload","func":"// Thermostat's location:\nvar longitude1 = -98.49;\nvar latitude1 = 29.42;\n\n// Array of pseudo random temperatures\nvar sensor42 = [9,10,11.5,14,16,12,11,10,12.5,11.5];  // plafond\n\n// Array of pseudo random temperatures\nvar sensor255 = [52,55,61,68,65,60,53,52,51,47];  //sol\n\n// Array of pseudo random temperatures\nvar sensor404 = [15,17,18.5,20,21.5,23,24,22.2,19,18]; //int\n\n// Array of pseudo random temperatures\nvar sensor8086 = [25,22,26,21,19,22.5,21,23,25,18]; //ext\n\n\n\n// Counter to select from array.\nvar counter1 = context.get('counter1')||0;\ncounter1 = counter1+1;\nif(counter1 > 9) counter1 = 0;\ncontext.set('counter1',counter1);\n\n// Create MQTT message in JSON\nmsg = {\n  payload: JSON.stringify(\n    {\n      d:{\n        \"sensor42\" : sensor42[counter1],\n        \"sensor404\" : sensor404[counter1],\n        \"sensor255\" : sensor255[counter1],\n        \"sensor8086\" : sensor8086[counter1],\n        \"location\" :\n        {\n          \"longitude\" : longitude1,\n          \"latitude\" : latitude1\n        },\n      }\n    }\n  )\n};\nreturn msg;\n","outputs":1,"noerr":0,"x":340,"y":940,"wires":[["db314703.cbeb38"]]}]
     ```
-1. You have the possibility to secure your Node-RED environment. If you decide not to do it, your Node-RED app (code editor) will be public and accessible by anyone who have the URL. It's recommanded to set a username and password.
-
-    ![Secure Node-RED](./images/secure.png)
-
-    Note that the settings will be persisted in the CloudantDB bound to this application. You can override them at any time by setting the following environment variables via the Bluemix console:
-    ```
-    NODE_RED_USERNAME - the username
-    NODE_RED_PASSWORD - the password
-    NODE_RED_GUEST_ACCESS - if set to `true`, allows anyone read-only access to the editor
-    ```
-1. Click on the red button "Go to your Node-RED flow editor" to access the flow editor.
-
-1. You see ready-made flows. The first one simulate a device publishing an event on your Watson IoT organization (the service has been created when you deployed the app).
-The second one that can process temperature readings from the Watson IoT platform events.
-
-    ![](./images/nodered-defaultflow.png)
 
 # Use Node-RED to read the sensor data
 
-1. In the second flow ("Temperature Monitor"), double-click the **IBM IoT App In** node to open the configuration dialog.
-
-    ![IoT App IN node](./images/iot-appnode.png)
 
 1. In the Authentication type field, select **Quickstart** from the pull-down list. Enter the Device ID field (you get it from the web simulator) and click OK.
 <br />*Make sure that the device id is entered in lowercase, and that there are no leading or trailing space characters.*
@@ -94,15 +68,15 @@ The second one that can process temperature readings from the Watson IoT platfor
 1. Look for the **Deploy** button in the upper right hand corner of your Node-RED workspace. The deploy button is now red; click it to deploy your flow.
 
     ![Node-RED Deploy](./images/nodered-deploy.png)
- 
+
 1. Open the debug pane on the right. You will see that the flow is generating Temperature Status messages.
 
-1. Increase the temperature value on the simulator to see the messages change in the debug pane. 
+1. Increase the temperature value on the simulator to see the messages change in the debug pane.
 <br /> *Note that a different message appears if the temperature exceeds 40 degrees.*
 
 # Store the device data into a No SQL database
 
-1. In Node-RED flow editor, add a **Cloudant out** node 
+1. In Node-RED flow editor, add a **Cloudant out** node
 
     ![Cloudant out node](./images/nodered-cloudant.png)
 
@@ -137,7 +111,7 @@ The first flow simulate a device publishing an event. To visualize the data in y
 
 1. Now you are going to register a device. Click "Register Devices"
 
-    <img src="./images/register-device.png" width="40%"/> 
+    <img src="./images/register-device.png" width="40%"/>
 
 1. Enter a device ID: "LivingRoomThermo1". Click Next, Next
 
@@ -145,9 +119,9 @@ The first flow simulate a device publishing an event. To visualize the data in y
 
 1. Click "Done"
 
-1. Go to Node-RED, open and modify the inject node to publish events continuously (repeat -> onterval -> every 3 seconds): 
+1. Go to Node-RED, open and modify the inject node to publish events continuously (repeat -> onterval -> every 3 seconds):
 
-    <img src="./images/repeat-inject.png" width="40%"/> 
+    <img src="./images/repeat-inject.png" width="40%"/>
 
 1. You can see events in the Watson IoT dashboard
 
@@ -158,7 +132,7 @@ The first flow simulate a device publishing an event. To visualize the data in y
 
 The warning messages generated in Node-RED uses English by default. You may want to translate those messages into your oww language.
 
-1. In the IBM Cloud Platform console, create a new service **Language Translator** (from the catalog) 
+1. In the IBM Cloud Platform console, create a new service **Language Translator** (from the catalog)
 
     ![Watson Language Translator catalog](./images/translator-catalog.png)
 
@@ -172,7 +146,7 @@ The warning messages generated in Node-RED uses English by default. You may want
 
     ![Watson Language Translator](./images/nodered-translationflow.png)
 
-1. Deploy the updated flow. 
+1. Deploy the updated flow.
 
 1. Observe the translated output based on the selected language.
 
@@ -182,4 +156,3 @@ The warning messages generated in Node-RED uses English by default. You may want
 For additional resources pay close attention to the following:
 
 - [Real Time Data Analysis Using IoT Platform Analytics](https://developer.ibm.com/recipes/tutorials/real-time-data-analysis-using-ibm-watson-iot-platform-analytics){:target="_blank"}
-

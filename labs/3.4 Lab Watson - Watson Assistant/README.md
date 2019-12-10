@@ -204,7 +204,7 @@ function main(params) {
 1. Copy the Key value (which is actually username:password) and also the current namespace.
 
 1.  Go back to the Watson Assistant tool, select the Opening node in the Intent tab.
-Import a new file of Intents in the tool: <a href="https://github.com/cllebrun/cllebrun.github.io/blob/master/labs/3.4%20Lab%20Watson%20-%20Watson%20Assistant/WCS_Lab_intents%20Before%20Session%204.csv" download="intent.csv">intent.csv</a> 
+Import a new file of Intents in the tool: <a href="https://github.com/cllebrun/cllebrun.github.io/blob/master/labs/3.4%20Lab%20Watson%20-%20Watson%20Assistant/WCS_Lab_intents%20Before%20Session%204.csv.zip" download="intent.csv.zip">intent.csv.zip</a>
 
 1. In the dialog tab, edit the welcome, by clicking on the "..." menu and selection "open the json editor" on the right.
 
