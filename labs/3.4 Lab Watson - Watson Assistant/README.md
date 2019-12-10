@@ -88,9 +88,6 @@ any
 city
 around the world.
 
-1.  On IBM Cloud deploy an instance of the service "Weather Company data" either using the graphic console or using the CF CLI US region, same space).
-
-1.  Open the services credentials (generate it if needed) and copy the username, password and host. You will need it later.
 
 1.  You are now going to create the Function called by Watson Conversation.This Function will call the Weather company service.
 
