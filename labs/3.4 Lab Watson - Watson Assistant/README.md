@@ -197,13 +197,13 @@ function main(params) {
 1.  To test your action, click 'invoke'
 ![](./images/invoke.png)
 
-1.  You need now to get the function credentials. Expand the getting started menu and click API Key:
-![](./images/apikey.png)
+1.  You need now to get the function credentials. Expand the "Namespace settings" menu and look for the API Key:
+![](./images/namespace.png)
 
 1. Copy the Key value (which is actually username:password) and also the current namespace.
 
 1.  Go back to the Watson Assistant tool, select the Opening node in the Intent tab.
-Import a new file of Intents in the tool: https://github.com/cllebrun/cllebrun.github.io/blob/master/labs/3.1%20Lab%20Watson%20-%20Watson%20Assistant/WCS_Lab_intents%20Before%20Session%204.csv
+Import a new file of Intents in the tool: [file](https://github.com/cllebrun/cllebrun.github.io/blob/master/labs/3.4%20Lab%20Watson%20-%20Watson%20Assistant/WCS_Lab_intents%20Before%20Session%204.csv) 
 
 1. In the dialog tab, edit the welcome, by clicking on the "..." menu and selection "open the json editor" on the right.
 
