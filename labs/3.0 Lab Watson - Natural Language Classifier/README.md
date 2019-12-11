@@ -1,18 +1,23 @@
-# Contents {#contents .TOCHeading}
+# 3.0 Lab Watson - Introduction to IBM Natural Language Classifier
 
-[Objective 1](#objective)
 
-[Create the service on the IBM Cloud 1](#create-the-service-on-the-ibm-cloud)
-
-[Training the service 7](#training-the-service)
-
-[Test the classifier 12](#test-the-classifier)
-
-[Conclusion 17](#conclusion)
 
 # Objective
 
 This tutorial will teach you how to build a customer service department routing service using IBM's Natural Language Classifier service which uses machine learning to figure out which department a customer's email/text/chat/phone call should be routed to. This service learns by examples that you provide and then when new questions are posed by customers, the system figures out which department is most appropriate for the question -- even if it has never seen the question before. This is the power of artificial intelligence algorithms as used in the Natural Language Classifier.
+
+# Pre-Requisites
+
++ an [IBM Cloud Platform account](https://cllebrun.github.io/labs/0_Registration/)
+
+# Steps
+[Create the service on the IBM Cloud](#create-the-service-on-the-ibm-cloud)
+
+[Training the service](#training-the-service)
+
+[Test the classifier](#test-the-classifier)
+
+[Conclusion](#conclusion)
 
 # Create the service on the IBM Cloud
 
