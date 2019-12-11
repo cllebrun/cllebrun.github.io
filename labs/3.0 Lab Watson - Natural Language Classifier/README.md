@@ -81,7 +81,7 @@ The natural language classifier service is trained by providing examples of natu
 
 1.  Before importing the training data, let's take a look at what the training data looks like.
 
-2.  Download the <a href="https://github.com/cllebrun/cllebrun.github.io/tree/master/labs/3.0%20Lab%20Watson%20-%20Natural%20Language%20Classifier/NLC%20_%20data.csv.zip" download="NLC_data.csv.zip">NLC_data.csv.zip</a> folder (You can download and extract the zip file on your laptop).
+2.  Download the <a href="https://github.com/cllebrun/cllebrun.github.io/blob/master/labs/3.0%20Lab%20Watson%20-%20Natural%20Language%20Classifier/NLC_data.csv.zip" download="NLC_data.csv.zip">NLC_data.csv.zip</a> folder (You can download and extract the zip file on your laptop).
 
 3.  Open the **NLC\_import\_data**.**csv** file with Excel or a text editor.
 
