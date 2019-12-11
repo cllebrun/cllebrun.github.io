@@ -14,6 +14,8 @@ Getting Started with the IBM Cloud Platform !
 
 + [2.1 Lab Node.js - Developer tool: Toolchain](./labs/2.1%20Lab%20Node.js%20-%20Developer%20tool:%20Toolchain)
 
++ [3.0 Lab Watson - Natural Language Classifier](./labs/3.0%20Lab%20Watson%20-%20Natural%20Language%20Classifier)
+
 + [3.1 Lab Watson - Natural Language Understanding](./labs/3.1%20Lab%20Watson%20-%20Natural%20Language%20Understanding)
 
 + [3.2 Lab Watson - Watson Visual Recognition](./labs/3.2%20Lab%20Watson%20-%20Watson%20Visual%20Recognition)
