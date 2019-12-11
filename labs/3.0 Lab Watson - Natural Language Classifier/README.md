@@ -31,7 +31,7 @@ This tutorial will teach you how to build a customer service department routing 
 
 5.  Click on Natural Language Classifier.
 
-  > ![1576055016971](assets/1576055016971.png)
+    > ![1576055016971](assets/1576055016971.png)
 
 6.  The defaults are fine, so just click on Create.
 
