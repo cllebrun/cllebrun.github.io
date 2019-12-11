@@ -41,28 +41,33 @@ In the following lab, you will learn:
 
 1. Scroll down to the Services section and click the icon for the Watson Assistant service. The Add Service page opens.
 
-![](./images/wa_service.png)
+![](./images/wa-service.png)
 
 1. Click Create. The service instance is created, and the service dashboard page opens automatically.
 
 1. On the dashboard page, click Manage and  **Launch Tool** to get started.
 
-![](./images/launch_tool.png)
+![](./images/launch-tool.png)
 
 
 # Step 2 - Build a skill
 
 A skill contains the training data and machine learning logic that enable your chat bot to understand and help customers. Add training data built by IBM or use graphical tools that help you build your own.
 
-1. On the Skill tab, click "Create Skill"
-![](./images/create_skill.png)
+1. On the Skill tab
+  ![](./images/skill-tab.png)
 
-1. Add a dialog skill (use sample skill)
-![](./images/import_skill.png)
+1. Click Create Skill
 
-This customer care is prebuilt for you, you can browse entities, intents and dialog
+1. Chose **Dialog Skill**, click **Next**
 
-1. In the Dialog tab, open the "try out panel" to test the chatbot. Not that it may need some time to train.
+1. On the tab **Use sample skill**, chose **Customer Care Sample Skill**
+  ![](./images/import-skill.png)
+
+  It will import that skill for you.
+  This customer care is prebuilt for you, you can browse entities, intents and dialog
+
+1. In the Dialog tab, open the **try out panel** to test the chatbot. Not that it may need some time to train.
 
 1. Test it.
 
@@ -92,16 +97,14 @@ around the world.
 1.  You are now going to create the Function called by Watson Conversation.This Function will call the Weather company service.
 
 1.  On the Catalog, select the Compute category and instantiate a Function:
-![](./images/functions.png)
+    ![](./images/function-service.png)
 
 1.  Click on Start Creating:
-![](./images/startcreating.png)
-
-  Make sure to select the region (US region, same space) used by your Watson Assistant.
+    ![](./images/start-creating.png)
 
 1.  Click Create Action
-1.  Enter Weather as name, keep Node.js 8, click Create:
-![](./images/createaction.png)
+1.  Enter Weather as name, keep Node.js 10, click Create on the bottom right:
+  ![](./images/create-action.png)
 
 1.  Copy paste the code bellow in your action:
 
@@ -197,11 +200,11 @@ function main(params) {
 1.  To test your action, click 'invoke'
 ![](./images/invoke.png)
 
-1.  You need now to get the function credentials. Expand the "Namespace settings" menu and look for the API Key:
+1.  You need now to get the function credentials. On the **Action tab**, expand the "Namespace settings" menu and look for the API Key:
 
 ![](./images/namespace.png)
 
-1. Copy the Key value (which is actually username:password) and also the current namespace.
+1. Copy the Key value (which is actually username:password) and also the current namespace (up and right, make sure the namespace is in the same region than your Assistant service)
 
 1.  Go back to the Watson Assistant tool, select the Opening node in the Intent tab.
 Import a new file of Intents in the tool: <a href="https://github.com/cllebrun/cllebrun.github.io/blob/master/labs/3.4%20Lab%20Watson%20-%20Watson%20Assistant/WCS_Lab_intents%20Before%20Session%204.csv.zip" download="intent.csv.zip">intent.csv.zip</a>
@@ -242,7 +245,7 @@ Condition :
   "output": {},
   "actions": [
         {
-        "name": "/<your_namespace> examples/Weather",
+        "name": "/<your_namespace>/Weather",
         "type": "cloud_function",
         "parameters": {
           "latitude": "$private.location.latitude",
