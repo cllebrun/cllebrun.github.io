@@ -145,7 +145,7 @@ Now that Watson has been trained on your specific terminology, let's test it.
 
     ![1576055437908](assets/1576055437908.png)
 
--   Note: if you search the training set (e.g. in Excel), you'll note that the word "procure" is not in the training set, yet the model understands that "procure" in this context is similar to "purchase". It is correctly classified by the service as a Life\_event.
+    -   Note: if you search the training set (e.g. in Excel), you'll note that the word "procure" is not in the training set, yet the model understands that "procure" in this context is similar to "purchase". It is correctly classified by the service as a Life\_event.
 
     ![1576055448145](assets/1576055448145.png)
 
