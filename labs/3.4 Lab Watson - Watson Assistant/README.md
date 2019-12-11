@@ -261,7 +261,7 @@ Condition :
 1.  Add a child to Call Weather Function node and fill it like this:
 Name: Display weather forecast
 condition:true
-response: The forecast today in "the city you have chosen for the coordinates" is $weather.narrative
+response: The forecast today in [the city you have chosen for the coordinates] is $weather.narrative
 
 1.  Return to the "Call Weather Function" node and select the option "Skip user input"
 
