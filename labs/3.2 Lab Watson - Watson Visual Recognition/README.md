@@ -134,7 +134,7 @@ Now that Watson has been trained on your specific images, let's test it out usin
 
   <img src="./images/test-custom.png"/>
 
-10. Click the Test tab and drop some pizza images onto the canvas to see how your custom model performs. The <a href="https://github.com/cllebrun/cllebrun.github.io/tree/master/labs/3.2%20Lab%20Watson%20-%20Watson%20Visual%20Recognition/Step2%20-%20Test%20Images.zip" download="step2-test-images.zip">step2-test-images</a> folder  contains some test images you can use (You can download and extract the zip file on your laptop); or find some from your favourite search engine.
+10. Click the Test tab and drop some pizza images onto the canvas to see how your custom model performs. The <a href="https://github.com/cllebrun/cllebrun.github.io/tree/master/labs/3.2%20Lab%20Watson%20-%20Watson%20Visual%20Recognition/Step2%20-%20Test%20images.zip" download="step2-test-images.zip">step2-test-images</a> folder  contains some test images you can use (You can download and extract the zip file on your laptop); or find some from your favourite search engine.
 
     <img src="./images/images-test-custom.png"/>
 
