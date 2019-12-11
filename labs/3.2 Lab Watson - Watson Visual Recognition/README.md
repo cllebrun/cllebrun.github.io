@@ -24,7 +24,7 @@ In the following lab, you will learn:
 
 # Pre-Requisites
 
-+ Get an IBM Cloud Platform account in the US region (https://cllebrun.github.io/labs/0_Registration/), or use an existing account.
++ Get an [IBM Cloud Platform account in the US region](https://cllebrun.github.io/labs/0_Registration/), or use an existing account.
 
 
 # Steps
@@ -84,7 +84,8 @@ Before creating a custom model, let's check out the General model that IBM has a
 12. Click the Test tab of this model to upload an unlabeled image that Watson will examine to determine what insights can be gleaned from Watson's training of millions of images.
   <img src="./images/test-general.png"/>
 
-13. Locate your favorite image search tool to find test images, use your personal images or drag images from [Test images folder](https://github.com/cllebrun/cllebrun.github.io/tree/master/labs/3.2%20Lab%20Watson%20-%20Watson%20Visual%20Recognition/Lab1%20-%20Test%20Images)
+13. Locate your favourite image search tool to find test images, use your personal images or drag images from <a href="https://github.com/cllebrun/cllebrun.github.io/tree/master/labs/3.2%20Lab%20Watson%20-%20Watson%20Visual%20Recognition/Step1%20-%20Test%20Images.zip" download="step1-test-images.zip">step1-test-images.zip</a>
+
   <img src="./images/test-general-images.png"/>
 
 Notice it displays the confidence score (which is the statistical probability of this classification against other classifiers in this model).
