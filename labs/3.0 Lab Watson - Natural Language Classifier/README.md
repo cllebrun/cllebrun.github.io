@@ -87,11 +87,11 @@ The natural language classifier service is trained by providing examples of natu
 
     ![1576055326044](assets/1576055326044.png)
 
--   Note the training data is simply a set of questions in one column and the classification of that question in another column - simple comma-separated-text file.
+    -   Note the training data is simply a set of questions in one column and the classification of that question in another column - simple comma-separated-text file.
 
--   Feel free to modify this file to something else like your kind of business.
+    -   Feel free to modify this file to something else like your kind of business.
 
--   You can also use the toolkit to enter the questions and classification, but it is often faster in Excel.
+    -   You can also use the toolkit to enter the questions and classification, but it is often faster in Excel.
 
 4.  Click on Browse to add the csv file to the project.
 
