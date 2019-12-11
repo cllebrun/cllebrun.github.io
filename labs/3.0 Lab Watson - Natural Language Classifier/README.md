@@ -61,15 +61,15 @@ This tutorial will teach you how to build a customer service department routing 
 
 15. Select the Natural Language Classifier asset.
 
-> ![1576055278190](assets/1576055278190.png)
+    > ![1576055278190](assets/1576055278190.png)
 
 16. You get to the following screen where you need to associate a Watson Natural Language Classifier service by clicking on here.
 
-> ![1576055289855](assets/1576055289855.png)
+    > ![1576055289855](assets/1576055289855.png)
 
 17. Select the Natural Language Classifier service that you created in the list and click on Select.
 
-> ![1576055297526](assets/1576055297526.png)
+    > ![1576055297526](assets/1576055297526.png)
 
 18. You should get to the following screen:
 
