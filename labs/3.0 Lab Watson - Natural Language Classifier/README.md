@@ -153,7 +153,7 @@ Now that Watson has been trained on your specific terminology, let's test it.
 
     ![1576055456651](assets/1576055456651.png)
 
--   Again, that sentence is not in the training data, yet sentences similar are and so the model can predict that this question is similar enough to the examples it has been trained on. It is this power that far exceeds what "keyword" matching can do, which is why this sort of automation has been too difficult in the past -- until now!
+    -   Again, that sentence is not in the training data, yet sentences similar are and so the model can predict that this question is similar enough to the examples it has been trained on. It is this power that far exceeds what "keyword" matching can do, which is why this sort of automation has been too difficult in the past -- until now!
 
     ![1576055472636](assets/1576055472636.png)
 
@@ -161,11 +161,11 @@ Now that Watson has been trained on your specific terminology, let's test it.
 
     ![1576055482390](assets/1576055482390.png)
 
--   Notice in this example, the confidence level isn't that high -- this is an important point with adopting AI systems: they can't do everything and may not be 100% correct all the time (much like humans), so when the AI isn't that certain, then route this request to a human. AI isn't going to replace people, but rather reduce the repetitive tasks.
+    -   Notice in this example, the confidence level isn't that high -- this is an important point with adopting AI systems: they can't do everything and may not be 100% correct all the time (much like humans), so when the AI isn't that certain, then route this request to a human. AI isn't going to replace people, but rather reduce the repetitive tasks.
 
     ![1576055493588](assets/1576055493588.png)
 
--   Feel free to experiment with other examples.
+    -   Feel free to experiment with other examples.
 
 5.  Click on Implementation.
 
