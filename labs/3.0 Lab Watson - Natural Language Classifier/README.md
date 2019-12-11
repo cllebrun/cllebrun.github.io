@@ -31,7 +31,7 @@ This tutorial will teach you how to build a customer service department routing 
 
 5.  Click on Natural Language Classifier.
 
-> ![1576055016971](assets/1576055016971.png)
+  > ![1576055016971](assets/1576055016971.png)
 
 6.  The defaults are fine, so just click on Create.
 
@@ -49,9 +49,9 @@ This tutorial will teach you how to build a customer service department routing 
 
     ![1576055055440](assets/1576055055440.png)
 
-12. Select a Standard project.
+12. Select an empty project.
 
-    ![1576055070662](assets/1576055070662.png)
+    ![1576055070662](assets/empty-project.png)
 
 13. Give a name for the project, ensure that you have selected a Cloud Object Storage (if not already created, you will need to create it) and click on Create.
 
